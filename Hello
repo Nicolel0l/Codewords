@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+        }
+    </style>
+<h1><span style="font-size: 110px;">HELL</span>
+    <span style="font-size: 150px;">O</span>
+    <span style="font-size: 180px;">O</span>
+    <span style="font-size: 220px;">O</span>
+    <span style="font-size: 260px;">O</span>
+    <span style="font-size: 300px;">O</span>
+    <span style="font-size: 350px;">O</span></h1>
+<h2>
+    <span style="font-size: 110px;">IT'S NICE</span>
+</h2>
+<h2><span style="font-size: 40px;">TO SEE YOU HERE</span>
+</html>

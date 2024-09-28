@@ -1,59 +1,66 @@
-body {
-    font-family: Helvetica;
-    margin: 0;
-    padding: 0;
-    background-color: #fffef7;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+<title>Student Knowledge Object (SKO)</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+.grid-container {
+display: grid;
+grid-template-columns: repeat(2, 1fr); 
+grid-template-rows: repeat(3, 1fr); 
+gap: 40px; 
+margin: 40px 0; 
 }
+.grid-item {
+background-color: rgba(255, 255, 255, 0.8);
+border: 1px solid rgba(0, 0, 0, 0.8);
+padding: 200px;
+font-size: 30px;
+text-align: center;
+display: flex; 
+justify-content: center; 
+align-items: center; 
+}
+</style>
+</head>
+<body>
+<header>
+<div class="nav-container">
+<div class="logo">
+<h1>Nicole's SKO</h1>
+</div>
+<nav>
+<ul class="nav-links">
+<li><a href="#activities">Activities</a></li>
+<li><a href="#research">Research</a></li>
+<li><a href="#glossary">Glossary</a></li>
+<li><a href="#resources">Resources</a></li>
+<li><a href="#methods">Methods</a></li>
+</ul>
+</nav>
+</div>
+</header>
 
-header {
-    background: #fffef7;
-    color: rgb(255, 78, 30);
-    padding: 10px 0;
-}
+<main>
+       
+<section>
+<h2>Codewords</h2>
+<div class="grid-container">
+<div class="grid-item">Activities</div>
+<div class="grid-item">Research</div>
+<div class="grid-item">Glossary</div>
+<div class="grid-item">Resources</div>
+<div class="grid-item">Methods</div>
+<div class="grid-item">More</div>
+</div>
+</section>
+</main>
 
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+<footer>
+<p>Home</p>
+</footer>
 
-.logo h1 {
-    margin-left: 8px;
-}
-
-nav {
-    margin-left: auto;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    margin: 0;
-}
-
-nav ul li {
-    margin: 0 32px;
-}
-
-nav a {
-    color: rgb(244, 38, 38);
-    text-decoration: none;
-}
-
-main {
-    padding: 80px;
-}
-
-section {
-    margin: 20px 0;
-}
-
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background: rgb(255, 78, 30);
-    color: white;
-}
+<script src="script.js"></script>
+</body>
+</html>

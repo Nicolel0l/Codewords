@@ -1,0 +1,113 @@
+ /* Home page */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+  font-family: 'Montserrat', sans-serif; 
+  background-color: #7be2f2 
+}
+
+.center-text {
+  text-align: center;  
+  margin-top: 20px;
+}
+
+
+.center-text p {
+  margin: 0; /* No extra space between lines */
+  line-height: 1.2; /* Adjust this for better spacing between lines */
+}
+
+.line1 {
+  font-size: 5rem; /* Font size for "SKO" */
+  font-weight: 500; /* Heaviest weight for emphasis */
+  color: #000000; /* Optional: same color or change as needed */
+}
+
+.line2 {
+  font-size: 6rem; /* Font size for "CODEWORDS" */
+  font-weight: 800; /* Slightly lighter weight */
+  color: #000000; /* Different color for contrast */
+}
+
+.line3 {
+  font-size: 2rem; /* Font size for "by Nicole Shin" */
+  font-weight: 300; /* Lightest weight */
+  color: #000000; /* Optional: same color or change as needed */
+}
+
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  width: 600px; 
+  margin-bottom: 20px; 
+  margin-top: 32px;
+}
+
+.icon {
+  width: 150px; 
+  height: 150px;
+  transition: all 0.3s linear; /* Smooth transition for both size and image */
+}
+
+.icon:hover {
+  transform: scale(1.1); /* Scale the icon to make it bigger */
+}
+
+.icon-activities .icon:hover {
+  content: url('images/head1.png'); /* Change image on hover */
+}
+
+
+.icon-research .icon:hover {
+  content: url('images/armhover.png'); /* Different image for Games */
+}
+
+.icon-allaboutcoding .icon:hover {
+  content: url('images/leghover.png'); /* Different image for Games */
+}
+
+.icon-resources .icon:hover {
+  content: url('images/vanhover.png'); /* Different image for Games */
+}
+
+.icon-label {
+  margin-top: 10px;
+  font-size: 1.2rem;  
+  font-weight: 600;
+  color: #000000;
+  text-decoration: none; /* No underline */
+  opacity: 0; /* Initially hide the label */
+  transition: opacity 0.3s ease; /* Smooth transition for the label */
+}
+
+.icon-item {
+  display: flex;           
+  flex-direction: column;  
+  align-items: center;     
+  position: relative;     
+}
+
+.icon-item:hover .icon-label {
+  opacity: 1; 
+}
+
+a {
+  text-decoration: none; 
+}
+
+a:hover {
+  text-decoration: none; 
+}
+
+
+
+
+
+
+

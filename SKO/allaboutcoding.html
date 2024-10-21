@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="allaboutcoding.css">
+    <title>Activities</title>
+</head>
+<body>
+    <!-- Fixed header section -->
+    <div class="header">
+        <nav class="navbar">
+            <a class="nav-link" href="index.html">HOME</a>
+            <a class="nav-link" href="research.html">RESEARCH</a>
+            <a class="nav-link" href="activities.html">ACTIVITIES</a>
+            <a class="nav-link" href="allaboutcoding.html">ALL ABOUT CODING</a>
+            <a class="nav-link" href="resources.html">RESOURCES</a>
+        </nav>
+        <h1 class="allaboutcoding-title">All about coding</h1>
+    </div>
+
+    <div class="container">
+        <!-- Table of Contents (Menu) on the left -->
+        <div class="toc">
+            <h3>TABLE OF CONTENTS</h3>
+            <ul>
+                <li><a href="#basichtml-section">Basic HTML & CSS Structure</a></li>
+                <li><a href="#function-section">function()</a></li>
+                <li><a href="#variable-section">variable</a></li>
+                <li><a href="#loops-section">loops</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h2 id="basichtml-section" class="coding-heading">Basic HTML & CSS structure</h2>
+            <div class="basichtml image-text-container">
+                <p class="basichtml image-description">This was the first coding lesson I learned in class. 
+                It was a bit hard to follow since I’m slower at picking things up, which made me feel overwhelmed at times.
+                Seeing the result on the screen was, however, rewarding in its own way.</p>  
+          
+            </div> <!-- Closing the first image-text-container -->
+  
+            <div class="basichtml image-text-container">
+  <pre class="basichtml code-snippet"><code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+    &lt;head&gt;
+    &lt;title&gt;codewords&lt;/title&gt;
+    &lt;style&gt;
+    html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    border: none;
+    padding: 0;
+    }
+    div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index:1;
+    align-items: center;
+    }
+    body {
+    text-align: center;
+    background-image: url(images/mouse.jpg);
+    background-size: 200px;
+    background-color: #ff0;
+    font-family: Helvetica, Arial, sans-serif;
+    color: white;
+    }
+    h1 {
+    font-size: 10vh; 
+    line-height: 1;
+    color: #f00;
+    transform: scale(1, 10); 
+    margin: 0;
+    z-index:0;
+    }
+    &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;div align="center"&gt;
+    &lt;img src="images/mouse.jpg" width="400"/&gt;
+    &lt;h1&gt;hello world!&lt;/h1&gt;
+    &lt;p&gt;Be present&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </code></pre>        
+    <img src="images/W1HelloWrold.jpg" alt="basic html" class="helloworld">
+    </div>
+ 
+    <div class="basichtml image-text-container">
+    <p class="basichtml image-description-second">Brainstorming about words on the screen using the crazy8 method and then writing code 
+        were new experiences. It felt like learning a foreign language and its system. Based on my sketch, I had to communicate with 
+        the machine specifically about what to do. I didn't know anything about HTML and CSS, and I got fundamental information here.
+        If you want to know what all the HTML tags mean, <a href="https://www.w3schools.com/tags/tag_span.asp" target="_blank">click here</a>.
+    </p> 
+    <img src="images/crazy8_helloworld.jpg" alt="Crazy 8" class="crazy8helloworld">
+    </div>
+
+    <div class="basichtml image-text-container">
+    <pre class="basichtml code-snippet-second"><code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+    &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, 
+    initial-scale=1.0"&gt;
+    &lt;title&gt;Hello Snippet&lt;/title&gt;
+    &lt;style&gt;
+    body {
+    font-family: Helvetica, Arial, sans-serif;
+    }
+    &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;h1&gt;&lt;span style="font-size: 110px;"&gt;HELL&lt;/span&gt;
+    &lt;span style="font-size: 150px;"&gt;O&lt;/span&gt;
+    &lt;span style="font-size: 180px;"&gt;O&lt;/span&gt;
+    &lt;span style="font-size: 220px;"&gt;O&lt;/span&gt;
+    &lt;span style="font-size: 260px;"&gt;O&lt;/span&gt;
+    &lt;span style="font-size: 300px;"&gt;O&lt;/span&gt;
+    &lt;span style="font-size: 350px;"&gt;O&lt;/span&gt;&lt;/h1&gt;
+    &lt;h2&gt;
+    &lt;span style="font-size: 110px;"&gt;IT'S NICE&lt;/span&gt;
+    &lt;/h2&gt;
+    &lt;h2&gt;&lt;span style="font-size: 40px;"&gt;TO SEE YOU HERE&lt;/span&gt;&lt;/h2&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;   
+    </code></pre>
+    <img src="images/helloooo.jpg" alt="Hellooo" class="hellooo">
+</div>
+
+<div class="basichtml image-text-container">
+    <p class="basichtml image-description-third">In class, we explored concrete poetry. I hadn’t heard of it before and wanted to find examples
+         in South Korea but couldn’t. Some poems we explored were hard to understand the meaning behind. However, I found “Blues” by bpNichol
+          (the image below) interesting. The reversal of the word “love” was clever, and the repetition of “e” created sound. Also, I saw 
+          each word can be seen as a person. Maybe it’s just me, but everyone probably finds their own meaning in it.
+    </p>
+    <p class="basichtml image-description-third">
+        We selected texts from “OK texts from metadata” and made concrete poetry-inspired sketches. My text was “We cannot process your 
+        information. Your information is corrupt and needs cleansing. Erase brain? OK.” I illustrated a funnel shape to suggest information
+         not processing. To highlight the word “Corrupt,” I used “transform: rotate();” to make it look chaotic and abnormal.
+    </p>
+    <p class="basichtml image-description-third">
+         For details on how rotate() works in CSS, check out this <a href="https://www.w3schools.com/cssref/css3_pr_transform.php" target="_blank"> resource</a>.
+    </p> 
+    </div>
+<div class="basichtml image-text-container">
+    <img src="images/blues.png" alt="Blues by bpNichol" class="blues">
+    <img src="images/concreteinspired.jpg" alt="sketch" class="concreteinspired">
+    
+    </div>
+
+<div class="basichtml image-text-container">
+<pre class="basichtml code-snippet-third"><code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;style&gt;
+    body {
+    justify-content: center;
+    align-items: center;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+    }
+    .long-text {
+    font-size: 15px;
+    margin-top: 20px;
+    text-align: right;
+    }
+    .rotated-text {
+    display: inline-block;
+    transform: rotate(-20deg);
+    transform-origin: center;
+    font-size: 160px;
+    }
+    &lt;/style&gt;
+    &lt;body&gt;
+    &lt;h1&gt;&lt;span style="font-size: 80px;"&gt;YOUR INFORMATION&lt;/span&gt;&lt;/h1&gt;
+    &lt;h1&gt;&lt;span style="font-size: 40px;"&gt;IS&lt;/span&gt;&lt;/h1&gt;
+    &lt;h1&gt;&lt;span class="rotated-text"&gt;CORRUPT&lt;/span&gt; AND&lt;/h1&gt;
+    &lt;h1&gt;&lt;span style="font-size: 40px;"&gt;NEEDS CLEANSING&lt;/span&gt;&lt;/h1&gt;
+    &lt;p&gt;W&lt;/p&gt;
+    &lt;p&gt;E&lt;/p&gt;
+    &lt;br&gt;
+    &lt;p&gt;C&lt;/p&gt;
+    &lt;p&gt;A&lt;/p&gt;
+    &lt;p&gt;N&lt;/p&gt;
+    &lt;p&gt;N&lt;/p&gt;
+    &lt;p&gt;O&lt;/p&gt;
+    &lt;p&gt;T&lt;/p&gt;
+    &lt;br&gt;
+    &lt;p&gt;P&lt;/p&gt;
+    &lt;p&gt;R&lt;/p&gt;
+    &lt;p&gt;O&lt;/p&gt;
+    &lt;p&gt;C&lt;/p&gt;
+    &lt;p&gt;E&lt;/p&gt;
+    &lt;p&gt;S&lt;/p&gt;
+    &lt;p&gt;S&lt;/p&gt;
+    &lt;br&gt;
+    &lt;p&gt;Y&lt;/p&gt;
+    &lt;p&gt;O&lt;/p&gt;
+    &lt;p&gt;U&lt;/p&gt;
+    &lt;p&gt;R&lt;/p&gt;
+    &lt;br&gt;
+    &lt;p&gt;I&lt;/p&gt;
+    &lt;p&gt;N&lt;/p&gt;
+    &lt;p&gt;F&lt;/p&gt;
+    &lt;p&gt;O&lt;/p&gt;
+    &lt;p&gt;R&lt;/p&gt;
+    &lt;p&gt;M&lt;/p&gt;
+    &lt;p&gt;A&lt;/p&gt;
+    &lt;p&gt;T&lt;/p&gt;
+    &lt;p&gt;I&lt;/p&gt;
+    &lt;p&gt;O&lt;/p&gt;
+    &lt;p&gt;N&lt;/p&gt; 
+    &lt;div class="long-text"&gt;
+    &lt;span&gt;ERASE BRAIN&lt;/span&gt;
+    &lt;span &gt;OK&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;    
+</code></pre>
+<img src="images/OK.jpg" alt="OK texts" class="OK">
+</div>
+<!-- p5 shapes -->
+<h2 id="basichtml-section" class="coding-heading">p5.js Shapes</h2>
+            <div class="basichtml image-text-container">
+            <p class="basichtml image-description-forth">We covered some basics of p5.js, learning how to create  
+                <a href="https://p5js.org/reference/#Shape" target="_blank"> shapes</a>, position them on the 
+                screen, and add colours. In p5.js, things are drawn in the order I write them. New shapes or elements go on top of the ones 
+                before. So, if something wants to appear in front, it needs to be drawn last.
+        
+                In this code, push() and pop() are used to save and restore the current drawing state. This way, transformations (like rotation,
+                translation, and scaling) are applied to specific elements without affecting the rest. Without 
+                <a href="https://p5js.org/reference/p5/push/" target="_blank">push() and pop()</a>, things like the eyes, nose, and mouth would
+                end up at odd angles because the rotated state would affect everything.</p> 
+            <img src="images/drawface.jpg" alt="Portrait" class="drawface">     
+            </div>
+
+    <div class="basichtml image-text-container">
+    <pre class="basichtml code-snippet-forth"><code> 
+    function setup() {
+    createCanvas(windowWidth, windowHeight);
+    background(135, 20, 235);
+    }
+                
+    function draw() {
+    // hair
+    fill(53, 33, 0);
+    ellipse(width / 2, 0.59 * height, 450, 500);
+    ellipse(width / 3.5, 0.8 * height, 160, 150);
+                
+    // body
+    fill(251, 198, 207);
+    square(width / 4, 0.75 * height, 500, 180);
+                
+    // face
+    fill(255, 252, 180);
+    circle(width / 2, 0.6 * height, 360, 400);
+                
+    // bangs (first one)
+    push();
+    fill(53, 33, 0);
+    rotate(-0.71 * QUARTER_PI);
+    ellipse(0.29 * width, 0.73 * height, 170, 250);
+    pop();
+    // bangs (second one)
+    push();     fill(53, 33, 0);
+    rotate(QUARTER_PI);
+    ellipse(0.57 * width, 0.01 * height, 170, 250);
+    pop();
+                
+    // eyes
+    fill(53, 33, 0);
+    circle(0.42 * width, height / 1.7, 20);
+    circle(0.57 * width, height / 1.7, 20);
+                
+    // nose
+    fill(251, 198, 207);
+    triangle(width / 1.0, 0.65 * height, width / 2.1, 
+    0.65 * height, width / 2, 0.6 * height);
+                
+    // mouth
+    fill(231, 84, 128);
+    ellipse(width / 2, 0.71 * height, 100, 20);
+    }                
+    </code></pre>
+    <img src="images/facep5.jpg" alt="Portrait" class="facep5">  
+</div>
+
+<div class="basichtml image-text-container">
+    <p class="basichtml image-description5">I created shapes that <a href="https://p5js.org/reference/p5/rotate/" target="_blank">rotate</a> 
+        using a variable called angle. As the frameCount increases, the angle also increases, resulting in a continuous rotation of the shapes. 
+        By multiplying frameCount by a larger value, I can make the rotation faster.
+  </p> 
+</div>
+<div class="basichtml image-text-container">
+  <pre class="basichtml code-snippet5"><code> 
+    function setup() {
+    createCanvas(400,400);
+    }
+    function draw() {
+    background(200);
+    let angle = frameCount * 0.05;
+    rotate(angle);
+    fill (0,255,0);
+    rect(100, 50, 80, 40);
+    fill(255, 0, 0);
+    circle(60,60,60);
+    fill(0, 0, 255);
+    triangle(90, 225, 174, 60, 258,225);
+    }
+  </code></pre>
+  <video width="480" controls class="video-rotate">
+    <source src="images/rotateShapes.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>     
+    </div>
+
+<!-- mouse events -->
+    <h2 id="basichtml-section" class="coding-heading">Mouse Events</h2>
+            <div class="basichtml image-text-container">
+            <p class="basichtml image-description6">The <a href="https://p5js.org/reference/p5/rotate/" target="_blank">mousePressed()</a>
+                function in this code increases the SIZE by 10 each time the mouse is clicked. By increasing the value to 30 instead of 10, 
+                the effect would be even more noticeable.</p>
+
+            <div class="basichtml image-text-container">
+                <pre class="basichtml code-snippet6"><code> 
+    var SIZE;
+    var xPos, Ypos;              
+    function setup() {
+    createCanvas(windowWidth, windowHeight);
+    background(0);
+    textAlign(CENTER);
+    SIZE=80;
+    xPos=width/2;
+    yPos=height/2;
+    frameRate(1);
+    }              
+    function draw() {
+    yPos=random(height);
+    xPos=random(width);
+    fill(255, 255, 0);
+    textSize(SIZE);
+    text('HELLO WORLD', xPos, yPos);
+    }
+    function mousePressed() {
+    SIZE+=10;
+    }
+    </code></pre>        
+    <video width="480" controls class="video-automaticWords">
+        <source src="images/increaseSize.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>     
+        </div>
+            
+    <div class="basichtml image-text-container">
+            <p class="basichtml image-description6">This code features several interesting effects. The text is positioned randomly with 
+                yPos=random(height); and xPos=random(width);, and it rotates based on the mouse’s horizontal position with rotate
+                (<a href="https://p5js.org/reference/p5/mouseX/" target="_blank">mouseX</a>);. 
+                The <a href="https://p5js.org/examples/transformation-translate/" target="_blank">translate</a>(xPos, yPos); is used to set 
+                the new position of the text. "translate" is often used with rotate or scale. 
+                Additionally, a line is drawn following the mouse movements. The \n character starts a new line of text.</p>
+    </div>
+            <div class="basichtml image-text-container">
+            <pre class="basichtml code-snippet6"><code> 
+    var SIZE;
+    var xPos, Ypos;
+    function setup() {
+    createCanvas(windowWidth, windowHeight);
+    background(0);
+    textAlign(CENTER, CENTER);
+    SIZE=80;
+    xPos=width/2;
+    yPos=height/2;
+    frameRate(5);
+    angleMode(DEGREES);
+    }
+    function draw() {
+    background(0, 25);
+    yPos=random(height);
+    xPos=random(width);
+    fill(255, 0, 0);
+    textSize(SIZE);
+    push();
+    translate(xPos, yPos);
+    rotate(mouseX);
+    text('OMG\nno thank you', -width/4, -height/4, width/2, 
+    height/2 );
+    pop();
+    stroke(255, 0,0);
+    strokeWeight(5);
+    line(mouseX, mouseY, pmouseX, pmouseY);
+    }
+    </code></pre>             
+    <video width="480" controls class="video-OMG">
+        <source src="images/OMG.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>     
+        </div>
+
+    <div class="basichtml image-text-container">
+            <p class="basichtml image-description6">In this code, the text rotates according to the mouseX position. The line pic.
+            <a href="https://p5js.org/reference/p5/filter/" target="_blank">filter</a>(BLUR, 3); adds a blur effect to the image. When the 
+            mouse is pressed, the text colour changes to white using an if-else statement. If the mouse button is pressed 
+            <a href="https://p5js.org/reference/p5/mousePressed/" target="_blank">mouseIsPressed</a>, it changes to white. 
+            If the mouse is not pressed (else), it changes to red.</p>
+    </div>
+
+<div class="basichtml image-text-container">
+<pre class="basichtml code-snippet6"><code> 
+    function setup() {
+    createCanvas(windowWidth, windowHeight);
+    background(0);
+    textAlign(CENTER, CENTER);
+    SIZE=80;
+    xPos=width/2;
+    yPos=height/2;
+    frameRate(5);
+    angleMode(DEGREES);
+    }
+    function draw() {
+    background(0);
+    //yPos=random(height);
+    //xPos=random(width);
+    fill(255, 0, 0);
+    if (mouseIsPressed===true) {
+    fill(255);
+    } else {
+    fill(255,0,0);
+    }
+    textSize(SIZE);
+    push();
+    translate(xPos, yPos);
+    noStroke();
+    //rotate(QUARTER_PI);
+    rotate(mouseX);
+    text('HELLO WORLD\nbye world', -width/4, -height/4, 
+    width/2, height/2 );
+    pop();
+    stroke(255, 0,0);
+    strokeWeight(5);
+    line(mouseX, mouseY, pmouseX, pmouseY);
+    pic.filter (BLUR,6);
+    image(pic, width/2-300, height/2);
+    }
+    var SIZE;
+    var xPos, Ypos;
+    function preload(){
+    pic=loadImage('data/lazy.jpg');
+    }
+    </code></pre>
+    <img src="images/blurimage.png" alt="blur" class="blurimage">  
+</div>
+
+<div class="basichtml image-text-container">
+    <p class="basichtml image-description6">
+    This code shows how to interact when the mouse is dragged. When the mouse is dragged 
+    (<a href="https://p5js.org/reference/p5/filter/" target="_blank">mouseDragged()</a>), it increments the value by 5, 
+    and if the value hits 255, it goes back to 0. Basically, it changes the green shade of the square when the mouse is dragged. 
+    If the mouse is not pressed (else), it changes to red. Check out more 
+    <a href="https://p5js.org/reference/#Mouse" target="_blank">mouse</a> functions here.</p>
+</div>
+
+<div class="basichtml image-text-container">
+    <pre class="basichtml code-snippet6"><code> 
+    let value = 0;
+    function setup() {
+    createCanvas(windowWidth, windowHeight);
+    }
+    function draw() {
+    background(255);
+    fill(0, value, 0);// Blue shade 
+    square(25, 25, 400); 
+    }
+    function mouseDragged() {
+    value += 5;
+    if (value > 255) {
+    value = 0;
+    }
+    }
+
+</code></pre>
+<video width="480" controls class="video-mouseDragged">
+    <source src="images/mouseDragged.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>   
+</div>
+
+<h2 id="basichtml-section" class="coding-heading">Custom Cursor</h2>
+<div class="basichtml image-text-container">
+<p class="basichtml image-description6">The <a href="https://p5js.org/reference/p5/rotate/" target="_blank">mousePressed()</a>
+    function in this code increases the SIZE by 10 each time the mouse is clicked. By increasing the value to 30 instead of 10, 
+    the effect would be even more noticeable.</p>
+</div>
+<div class="basichtml image-text-container">
+    <pre class="basichtml code-snippet6"><code> 
+    var pic;
+    function preload(){
+    pic = loadImage("data/lazy.jpg"); 
+    }
+    function setup() {
+    createCanvas(windowWidth, windowHeight);
+    background("blue");
+    imageMode(CENTER, CENTER);
+    }
+    function draw(){
+    image(pic, mouseX, mouseY, 100, 100);
+    }
+
+</code></pre>
+<video width="480" controls class="video-mouseImage">
+    <source src="images/mouseImage.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>   
+</div>
+
+<h2 id="basichtml-section" class="coding-heading">Radio Button</h2>
+<div class="basichtml image-text-container">
+<p class="basichtml image-description6">
+    This code demonstrates how to create a radio button using the <a href="https://p5js.org/reference/p5/createRadio/" target="_blank">
+    createRadio()</a> function. While the radio button is stored in the variable named myRadio, you can choose any name for this variable. 
+    The line button = <a href="https://p5js.org/reference/p5/createButton/" target="_blank">createButton</a>('click me'); creates a button 
+    labeled "click me."
+</p>
+    <p class="basichtml image-description6">   
+    Additionally, the statement <a href="https://p5js.org/reference/p5/let/" target="_blank">let</a> buttons = []; creates an empty array to hold multiple buttons. Then, with a for loop, the program 
+    generates 100 "click me" buttons, each randomly placed across the screen, making for a fun interaction.</p>
+    <div class="basichtml image-text-container">
+
+    <pre class="basichtml code-snippet6"><code> 
+    var myRadio;
+    function setup() {
+    createCanvas(windowWidth, windowHeight);
+    background("blue");
+    imageMode(CENTER, CENTER);
+    // Create a radio button element and place it
+    myRadio = createRadio();
+    myRadio.position(width/4, height/4);
+    myRadio.size(100);
+    // Add a few color options.
+    myRadio.option('red');
+    myRadio.option('yellow');
+    myRadio.option('blue');
+    // Choose a default option.
+    myRadio.selected('yellow');
+    let div = createDiv &lt;h3&gt;HELLO WORLD&lt;/h3&gt;
+    div.position(width/2, height/2)
+    //image(pic, mouseX, mouseY, 100, 100);
+    button = createButton('click me');
+    button.position(width/2, height/2);
+    let buttons=[];
+    for (let i=0; i<100;i++){
+    buttons[i]=createButton ('click me');
+    buttons[i].position(random(width), random(height));
+    }
+    }
+    function draw() {
+    let g = myRadio.value();
+    background(g)
+    }    
+
+</code></pre>
+<video width="480" controls class="video-radioButton">
+        <source src="images/radioButton.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>   
+</div>
+
+<h2 id="basichtml-section" class="coding-heading">Play a Sound</h2>
+<div class="basichtml image-text-container">
+<p class="basichtml image-description6">
+This code demonstrates how to add and play a sound. It uses loadSound() to load an audio file from the data folder. In the setup() function,
+    getAudioContext().suspend(); is called to prevent the sound from playing automatically.
+</p>
+<p class="basichtml image-description6">
+    In the mousePressed() function, when you click the mouse, the program checks if the audio is paused. If it is, the sound will play. The 
+    keyTyped() function is triggered whenever a key is pressed. If the space bar is pressed (using if (key === " ")), the sound stops. For any
+     other key, the sound starts playing again, giving users control over the audio.
+</p>
+<p class="basichtml image-description6">
+    The <a href="https://p5js.org/reference/p5/if/" target="_blank">if</a> statements are crucial because they allow the program to make
+    decisions based on user actions. In this code, checking if the space bar is pressed determines whether the sound stops or plays.</p>
+</div>
+<div class="basichtml image-text-container">
+    <pre class="basichtml code-snippet6"><code> 
+    var song;
+    function preload(){
+    song= loadSound("data/lion-roar-6011.mp3");
+    }
+    function setup() {
+    createCanvas(windowWidth, windowHeight);
+    background(255, 255, 0);
+    getAudioContext().suspend();
+    }
+    function draw() {
+    background(255, 255, 0);
+    circle(mouseX, mouseY, 60);
+    }
+    function mousePressed() {
+    if (getAudioContext().state !== 'running') {
+    getAudioContext().resume();
+    song.play();
+    song.loop();
+    }
+    }
+    function keyTyped(){
+    if (key === " "){ //space bar
+    song.stop();
+    }
+    else {//any other key
+    song.play();
+    }
+    }
+    </code></pre>
+    
+    <video width="480" controls class="video-roarSound">
+    <source src="images/roarSound.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>   
+    </div>
+
+    <h2 id="basichtml-section" class="coding-heading">Animating Text (wiggly letters)</h2>
+    <div class="basichtml image-text-container">
+    <p class="basichtml image-description6">
+    This code creates fun, wiggly letters on the screen and has many things to mention regarding new methods and functions in this code. 
+     The loop for (var i = 0; i < wigglyLetters.length; i++) goes through each letter in the wigglyLetters array. Without this loop, only one
+    letter would show at a time. The giggle() method makes the letters wiggle by changing their size randomly, which can increase or decrease
+    by up to 20 pixels.
+    </p>
+    <p class="basichtml image-description6">
+    When you click the mouse, the mousePressed() function generates a <a href="https://p5js.org/reference/p5/random/">random</a> number between 
+    65 and 159 (with 160 not included). 
+    The <a href="https://p5js.org/reference/p5/char/#:~:text=char()%20converts%20numbers%20to,single%2Dcharacter%20string%20is%20returned." 
+    target="_blank">char</a>(rand) function turns that number into a character, like 'A' for 65 and 'B' for 66, using the 
+    <a href="https://www.asciitable.com/">ASCII table</a>. The line wigglyLetters.push(new Wiggle (mouseX, mouseY, size, letter, speed)); 
+    creates a new wiggle object at the mouse's position with the random letter, size, and speed. The .push() method adds this new Wiggle object
+    to the wigglyLetters array. So, every time you click the mouse, a new letter is created and added to the array, while the existing letters 
+    keep showing and wiggling.
+    </p>
+    <p class="basichtml image-description6">
+    A <a href="https://p5js.org/reference/p5/class/">class</a> is like a template that helps us create many similar objects without rewriting code. 
+    Each letter created with new Wiggle(...) is an instance of the Wiggle class. Each instance can have its own unique values, like position and size.
+    The constructor sets up these starting values for each new wiggly letter. The display() method is what actually shows the letters on the screen.
+    The line textSize(this.textSize) makes the letters display in their random sizes; without it, they would just show in the default size. 
+    The text(this.letter, this.x, this.y) line draws the letter on the canvas. If this line were missing, no letters would appear.
+    </p>
+    <p class="basichtml image-description6">
+    Finally, the <a href="https://p5js.org/reference/p5/windowResized/">windowResized()</a> function keeps the canvas size adjustable. This means 
+    that if you change the window size, the canvas will resize to fit accordingly. I found it exciting to see how each click generates a new, 
+    animated letter. The combination of looping, randomization, and classes creates a dynamic and engaging visual. 
+    </p>
+    </div>
+
+    <div class="basichtml image-text-container">
+    <pre class="basichtml code-snippet6"><code>
+    var wigglyLetters=[];
+    var size=32;
+    var speed=1;
+    var letter, rand, xposition, yposition;
+    function setup() {
+    createCanvas(windowWidth, windowHeight);
+    background(0);
+    textSize(32);
+    textFont("Times"); 
+    }
+    function draw() {
+    background(0);
+    fill(255,255,0);
+    noStroke();
+    for(var i=0; i<wigglyLetters.length; i++){
+    wigglyLetters[i].giggle();
+    wigglyLetters[i].display();
+    }
+    }
+    function mousePressed() {
+    rand = int(random(65, 160));
+    letter= char(rand);
+    //text(letter, mouseX, mouseY);
+    //new wiggle class : position x, positiony, size, letter, speed
+    wigglyLetters.push(new Wiggle (mouseX, mouseY, size, letter, speed));
+    }
+    class Wiggle {
+    constructor(x, y, size, letter, speed){
+    this.x=x;
+    this.y=y;
+    this.textSize=size;
+    this.speed=speed;
+    this.letter=letter;
+    }
+    giggle(){
+    this.x+=random(-4, 4);
+    this.y+=random(-4, 4);
+    this.textSize+=random(-20, 20);
+    }
+    // draws the elements to the screen 
+    display(){
+    textSize(this.textSize);
+    text(this.letter, this.x, this.y);
+    }
+    }
+    function windowResized(){
+    resizeCanvas(windowWidth, windowHeight);
+    }
+</code></pre>
+    
+    <video width="480" controls class="video-wigglewiggle">
+        <source src="images/wigglewiggle.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>   
+        </div>
+    
+
+    </body>
+    </html>
+            
+        
+ 

@@ -198,19 +198,14 @@ function displayImages() {
 }
 
 function drawDashedLine(x1, y1, x2, y2, dashLength, gapLength) {
-    let totalLength = dist(x1, y1, x2, y2);
-    let numDashes = floor(totalLength / (dashLength + gapLength));
-
-    for (let i = 0; i < numDashes; i++) {
-        let startX = lerp(x1, x2, (i * (dashLength + gapLength)) / totalLength);
-        let startY = lerp(y1, y2, (i * (dashLength + gapLength)) / totalLength);
-
-        let endX = startX + cos(atan2(y2 - y1, x2 - x1)) * dashLength;
-        let endY = startY + sin(atan2(y2 - y1, x2 - x1)) * dashLength;
-
-        line(startX, startY, endX, endY);
-    }
+    setLineDash([dashLength, gapLength]);
+    line(x1, y1, x2, y2); 
 }
+
+function setLineDash(list) {
+    drawingContext.setLineDash(list); 
+}
+
 
 function breakTexts() {
     for (let i = 0; i < textPositions.length; i++) {

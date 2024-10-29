@@ -1,6 +1,6 @@
 Reflective Statement
 
-Before starting this class, I had no idea what creative coding was and had no coding experience. The afternoon coding class was fast-paced, and I was busy following the instructions rather than fully understanding them. There were some overwhelming moments, but I realised that it was the way to learn. I tried to make time outside of class to understand coding more.
+Before starting this course, I had no idea what creative coding was and had no coding experience. The afternoon coding class was fast-paced, and I was busy following the instructions rather than fully understanding them. There were some overwhelming moments, but I realised that it was the way to learn. I tried to make time outside of class to understand coding more.
 
 What I was learning for the first few weeks seemed vague and uncertain. I often wondered how I could complete the project in such a short period of time. I am more used to practical design than artistic, so it took some time to adjust at first.
 

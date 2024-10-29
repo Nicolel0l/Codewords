@@ -1,0 +1,123 @@
+ /* research page */
+html, body {
+  height: auto;        
+  margin: 0;
+  display: block;      
+  font-family: 'Montserrat', sans-serif; 
+  background-color: #ffffff;
+}
+
+.header {
+  display: flex;                   
+  flex-direction: column;     
+  height: 160px;     
+  padding: 32px;                 
+ position: static;              
+  top: 0;                         
+  left: 0;                        
+  width: 100%;                   
+  background-color: #ffffff;     
+  z-index: 1000;                 
+}
+
+.navbar {
+  display: flex;                 
+  justify-content: flex-start;     
+  align-items: center;  
+  margin-left: 40px;             
+  padding: 10px 0;                 
+}
+
+.nav-link {
+  font-size: 1rem;
+  color: #000000;
+  text-decoration: none;
+  margin-right: 80px; 
+}
+
+.research-title {
+  font-size: 7rem;                 
+  font-weight: bold;              
+  margin: 10px 0 0;                
+  color: #000000;                 
+  text-align: right;    
+  flex-grow: 1;      
+  padding-right: 64px;   
+}
+.content {
+  padding: 80px 20px;
+  position: relative;
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 200;
+  margin-left: 350px;
+  margin-right: auto;
+  max-width: 1200px; 
+}
+
+.research-heading {
+    text-align: left;
+    font-size: 40px;
+    margin-top: 72px;
+    font-weight: 400;  
+}
+.research.image-text-container {
+  display: flex;
+  justify-content: flex-start; 
+  align-items: flex-start;
+  margin-bottom: 24px; 
+  flex-wrap: wrap;
+}
+.research .image-description {
+width: 880px;
+font-size: 18px;
+font-weight: 400;
+margin-top: 0;
+margin-left: 0;
+line-height: 1.7;
+}
+
+.Manifesto {
+    width: 800px;
+    height: auto; 
+  }
+
+.Alphonse{
+    width: 800px;
+    height: auto; 
+  }
+  .newSketch{
+    width: 800px;
+    height: auto; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+ 
+.fig-caption {
+    text-align: left;
+    font-size: 18px;
+    margin-top: 5px;
+    font-weight: 300;
+}
+
+.fig-caption-right {
+    text-align: left;
+    font-size: 18px;
+    margin-top: 5px;
+    font-weight: 300;
+    margin-left: 32px;
+}
+.Atari2600 {
+    width: 384px;
+    height: auto; 
+  }
+
+  .pacman {
+    width: 384px;
+    height: auto; 
+    margin-left: 32px;
+  }
+
+
+
+
+  

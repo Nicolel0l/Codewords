@@ -1,0 +1,385 @@
+/* All about coding page */
+html, body {
+    height: auto;        
+    margin: 0;
+    display: block;      
+    font-family: 'Montserrat', sans-serif; 
+    background-color: #ffffff;
+  }
+
+  .header {
+    display: flex;                   
+    flex-direction: column;     
+    height: 160px;     
+    padding: 32px;                 
+   position: static;              
+    top: 0;                         
+    left: 0;                        
+    width: 100%;                   
+    background-color: #ffffff;     
+    z-index: 1000;                 
+  }
+
+.navbar {
+    display: flex;                 
+    justify-content: flex-start;     
+    align-items: center;  
+    margin-left: 40px;             
+    padding: 10px 0;                 
+  }
+
+.nav-link {
+    font-size: 1rem;
+    color: #000000;
+    text-decoration: none;
+    margin-right: 80px;
+}
+
+.allaboutcoding-title {
+    font-size: 7rem;
+    font-weight: bold;
+    color: #000000;
+    text-align: right;
+    padding-right: 64px;
+    
+}
+
+/* Table Container for layout */
+.container {  
+    position: relative;
+    text-align: left;
+    display: flex;
+    padding-top: 160px;  
+    margin-top: 40px;    
+}
+
+/* Table of Contents styles */
+.toc {
+    width: 300px;
+    background-color: #ffffff;
+    padding: 20px;
+    position: sticky;  
+    top: 40px;  
+    height: 80vh;
+    margin-left: 48px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    float: left;
+}
+
+.toc h3 {
+    margin-top: 0;
+    
+}
+
+.toc ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.toc li {
+    margin-bottom: 20px;
+}
+
+.toc a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #000;
+    font-weight: 600;
+}
+
+.toc a:hover {
+    color: #007BFF;
+}
+
+/* Content styles */
+.content {
+    padding: 20px;
+    background-color: #fff;
+    max-width: 900px;
+    position: relative;
+    text-align: left;
+    margin-left: 56px;
+  
+}
+
+.coding-heading {
+  padding-top: 40px; 
+  font-size: 40px;
+  font-weight: 400;
+
+}
+
+/* Basic HTML &Css */
+.basichtml.image-text-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 24px;
+    
+}
+
+.basichtml .image-description {
+    width: 880px;
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-left: 0;
+    line-height: 1.7;
+  }
+
+
+ /* The second row of basic html */
+ .basichtml .image-description-second{
+    width: 384px;
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-left: 0;
+    line-height: 1.7;
+    
+  }
+
+ .basichtml .code-snippet {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 384px;
+    height: auto; 
+    margin-top: 0;
+}
+  .helloworld {
+    width: 384px;
+    height: auto; 
+    margin-left: 32px;
+    
+  } 
+/* The third row of basic html */
+
+.basichtml .code-snippet-second  {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 384px;
+    height: auto; 
+    margin-top: 0;
+}
+.crazy8helloworld {
+    width: 384px;
+    height: auto; 
+    margin-left: 32px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ 
+  } 
+
+  .basichtml .image-description-third{
+    width: 880px;
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-left: 0;
+    line-height: 1.7;
+  }
+
+.hellooo {
+    width: 384px;
+    height: auto;
+    margin-left: 32px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.blues{
+    width: 384px;
+    height: auto;
+    
+}
+.concreteinspired{
+    width: 384px;
+    height: auto;
+    margin-left: 32px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.basichtml .code-snippet-third  {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 384px;
+    height: auto; 
+    margin-top: 0;
+}
+
+.OK {
+    width: 384px;
+    height: auto;
+    margin-left: 32px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* P5.js Shapes */
+.basichtml .image-description-forth{
+    width: 384px;
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-left: 0;
+    line-height: 1.7;
+  }
+
+.drawface {
+    width: 384px;
+    height: auto;
+    margin-left: 32px;
+}
+
+.basichtml .code-snippet-forth  {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 384px;
+    height: auto; 
+    margin-top: 0;
+}
+
+.facep5 {
+    width: 384px;
+    height: auto;
+    margin-left: 32px;
+}
+
+.video-rotate {
+    height: auto;
+    margin-left: 32px;
+}
+
+.basichtml .image-description5{
+    width: 880px;
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-left: 0;
+    line-height: 1.7;
+  }
+
+.basichtml .code-snippet5{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 384px;
+    height: auto; 
+    margin-top: 0;
+}
+
+.basichtml.image-description6 {
+    width: 880px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-left: 0;
+    line-height: 1.7;
+    
+    }
+  .basichtml .code-snippet6{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 384px;
+    height: auto; 
+    margin-top: 0;
+}
+
+.basichtml .code-snippet7{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 880px;
+    height: auto; 
+    margin-top: 0;
+}
+
+.video-automaticWords, 
+.video-OMG {
+    height: auto;
+    margin-left: 32px;
+}
+
+.blurimage {
+    width: 384px;
+    height: auto;
+    margin-left: 32px;
+}
+
+.video-mouseDragged,
+.video-mouseImage {
+    height: auto;
+    margin-left: 32px;
+}
+
+/* Radio Button */
+.video-radioButton {
+    height: auto;
+    margin-left: 32px;
+}
+
+/* play a sound */
+.video-roarSound,
+.video-wigglewiggle {
+    height: auto;
+    margin-left: 32px;
+}
+
+/* TextToPoints, create multiple canvases*/
+.video-TextToPoints,
+.video-Surprise{
+    height: auto;
+    margin-left: 32px;
+}
+
+/* emoji face */
+.emojiFace,
+.let {
+    width: 384px;
+    height: auto;
+    margin-left: 32px;
+}
+
+/* boolean*/
+.video-mouseIsPressed{
+    height: auto;
+    margin-left: 32px;
+}
+
+.goodjob,
+.notgood{
+    width: 176px;
+    height: auto;
+    margin-left: 32px;
+}
+
+/* animation*/
+.video-bouncingBall,
+.video-randomDots{
+    height: auto;
+    margin-left: 32px;
+}
+
+/* circle wave*/
+.video-circleWave,
+.video-snowing {
+    height: auto;
+    margin-left: 32px;
+}
+
+ul li {
+    width: 880px;
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-left: 0;
+    line-height: 1.7;
+  }
+  
+.video-bouncingEmoji,
+.video-frog {
+    height: auto;
+    margin-left: 32px;
+}
+.video-classExperiment{
+    height: auto;
+    margin-left: 32px;
+}
+
+.video-finalProject{
+    height: auto;
+    margin-left: 32px;
+}
+.projectHome {
+    width: 384px;
+    height: auto;
+    
+}

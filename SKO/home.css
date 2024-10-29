@@ -1,0 +1,112 @@
+ /* Home page */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+  font-family: 'Montserrat', sans-serif; 
+  background-color: #F4673A 
+}
+
+.center-text {
+  text-align: center;  
+  margin-top: 40px;
+}
+
+
+.center-text p {
+  margin: 8px; 
+
+}
+
+.line1 {
+  font-size: 120PX;
+  font-weight: 700; 
+  color: #000000; 
+  line-height: 0.9; 
+}
+
+.line2 {
+  font-size: 56px; 
+  font-weight: 300; 
+  color: #000000; 
+}
+
+.line3 {
+  font-size: 32px; 
+  font-weight: 300; 
+  color: #000000; 
+}
+
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  width: 600px; 
+  margin-bottom: 20px; 
+  margin-top: 32px;
+}
+
+.icon {
+  width: 150px; 
+  height: 150px;
+  transition: all 0.3s linear; 
+}
+
+.icon:hover {
+  transform: scale(1.1); 
+}
+
+.icon-activities .icon:hover {
+  content: url('images/head1.png'); 
+}
+
+.icon-research .icon:hover {
+  content: url('images/armhover.png'); 
+}
+.icon-allaboutcoding .icon:hover {
+  content: url('images/leghover.png'); 
+}
+
+.icon-resources .icon:hover {
+  content: url('images/vanhover.png'); 
+}
+.icon-label {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.2rem;  
+  font-weight: 600;
+  color: #000000;
+  text-decoration: none; 
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+}
+
+.icon-item {
+  display: flex;           
+  flex-direction: column;  
+  align-items: center;     
+  position: relative;     
+}
+
+.icon-item:hover .icon-label {
+  opacity: 1; 
+}
+
+a {
+  text-decoration: none; 
+}
+
+a:hover {
+  text-decoration: none; 
+}
+
+
+
+
+
+
+

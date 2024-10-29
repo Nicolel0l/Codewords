@@ -1,0 +1,1706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="allaboutcoding.css">
+    <title>All about coding</title>
+</head>
+<body>
+    <!-- Fixed header section -->
+    <div class="header">
+        <nav class="navbar">
+            <a class="nav-link" href="index.html">HOME</a>
+            <a class="nav-link" href="research.html">RESEARCH + INSIGHTS</a>
+            <a class="nav-link" href="activities.html">CLASS ACTIVITIES</a>
+            <a class="nav-link" href="allaboutcoding.html">ALL ABOUT CODING</a>
+            <a class="nav-link" href="references.html">REFERENCES</a>
+        </nav>
+        <h1 class="allaboutcoding-title">All about coding</h1>
+    </div>
+
+    <div class="container">
+        <div class="toc">
+            <h3>TABLE OF CONTENTS</h3>
+            <ul>
+                <li><a href="#basichtml-section">Basic HTML & CSS Structure</a></li>
+                <li><a href="#shapes-section">p5.js Shapes</a></li>
+                <li><a href="#function-section">function</a></li>
+                <li><a href="#variable-section">variables</a></li>
+                <li><a href="#boolean-section">Boolean</a></li>
+                <li><a href="#if-section">If statement</a></li>
+                <li><a href="#bouncingBall-section">Bouncing Ball Animation</a></li>
+                <li><a href="#randomdots-section">Colourful Random Dots</a></li>
+                <li><a href="#array-section">Snowfall Animation (array)</a></li>
+                <li><a href="#class-section">Bouncing Emojis (class)</a></li>
+                <li><a href="#pushandpop-section">push() and pop()</a></li>
+                <li><a href="#mouseevent-section">Mouse Events</a></li>
+                <li><a href="#mousepressed-section">Circle Wave: mousePressed()</a></li>
+                <li><a href="#customcursor-section">Custom Cursor</a></li>
+                <li><a href="#radiobutton-section">Radio Button</a></li>
+                <li><a href="#sound-section">Play a Sound</a></li>
+                <li><a href="#wiggly-section">Animating Text (wiggly letters)</a></li>
+                <li><a href="#texttopoints-section">textToPoints()</a></li>
+                <li><a href="#multiplecanvases-section">Make Multiple Canvases</a></li>
+                <li><a href="#project-section">Project</a></li>
+                
+            </ul>
+        </div>
+
+        <div class="content">
+            <h2 id="basichtml-section" class="coding-heading">Basic HTML & CSS structure</h2>
+        
+            <div class="basichtml image-text-container">
+  <pre class="basichtml code-snippet"><code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+    &lt;head&gt;
+    &lt;title&gt;codewords&lt;/title&gt;
+    &lt;style&gt;
+    html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    border: none;
+    padding: 0;
+    }
+    div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index:1;
+    align-items: center;
+    }
+    body {
+    text-align: center;
+    background-image: url(images/mouse.jpg);
+    background-size: 200px;
+    background-color: #ff0;
+    font-family: Helvetica, Arial, sans-serif;
+    color: white;
+    }
+    h1 {
+    font-size: 10vh; 
+    line-height: 1;
+    color: #f00;
+    transform: scale(1, 10); 
+    margin: 0;
+    z-index:0;
+    }
+    &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;div align="center"&gt;
+    &lt;img src="images/mouse.jpg" width="400"/&gt;
+    &lt;h1&gt;hello world!&lt;/h1&gt;
+    &lt;p&gt;Be present&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+    </code></pre>        
+    <img src="images/W1HelloWrold.jpg" alt="basic html" class="helloworld">
+    </div>
+
+
+    <div class="basichtml image-text-container">
+    <pre class="basichtml code-snippet-second"><code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="en"&gt;
+    &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport"content="width=device-width, 
+    initial-scale=1.0"&gt;
+    &lt;title&gt;Hello Snippet&lt;/title&gt;
+    &lt;style&gt;
+    body {
+    font-family: Helvetica, Arial, sans-serif;
+    }
+    &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+    &lt;h1&gt;&lt;span style="font-size: 110px;"&gt;HELL&lt;/span&gt;
+    &lt;span style="font-size: 150px;"&gt;O&lt;/span&gt;
+    &lt;span style="font-size: 180px;"&gt;O&lt;/span&gt;
+    &lt;span style="font-size: 220px;"&gt;O&lt;/span&gt;
+    &lt;span style="font-size: 260px;"&gt;O&lt;/span&gt;
+    &lt;span style="font-size: 300px;"&gt;O&lt;/span&gt;
+    &lt;span style="font-size: 350px;"&gt;O&lt;/span&gt;&lt;/h1&gt;
+    &lt;h2&gt;
+    &lt;span style="font-size: 110px;"&gt;IT'S NICE&lt;/span&gt;
+    &lt;/h2&gt;
+    &lt;h2&gt;&lt;span style="font-size: 40px;"&gt;
+    TO SEE YOU HERE&lt;/span&gt;&lt;/h2&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;   
+    </code></pre>
+    <img src="images/helloooo.jpg" alt="Hellooo" class="hellooo">
+</div>
+
+<div class="basichtml image-text-container">
+<pre class="basichtml code-snippet-third"><code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;style&gt;
+    body {
+    justify-content: center;
+    align-items: center;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+    }
+    .long-text {
+    font-size: 15px;
+    margin-top: 20px;
+    text-align: right;
+    }
+    .rotated-text {
+    display: inline-block;
+    transform: rotate(-20deg);
+    transform-origin: center;
+    font-size: 160px;
+    }
+    &lt;/style&gt;
+    &lt;body&gt;
+    &lt;h1&gt;&lt;span style="font-size: 80px;"&gt;
+    YOUR INFORMATION&lt;/span&gt;&lt;/h1&gt;
+    &lt;h1&gt;&lt;span style="font-size: 40px;
+    "&gt;IS&lt;/span&gt;&lt;/h1&gt;
+    &lt;h1&gt;&lt;span class="rotated-text"&gt;CORRUPT&lt;
+    /span&gt; AND&lt;/h1&gt;
+    &lt;h1&gt;&lt;span style="font-size: 40px;"&gt;
+    NEEDS CLEANSING&lt;/span&gt;&lt;/h1&gt;
+    &lt;p&gt;W&lt;/p&gt;
+    &lt;p&gt;E&lt;/p&gt;
+    &lt;br&gt;
+    &lt;p&gt;C&lt;/p&gt;
+    &lt;p&gt;A&lt;/p&gt;
+    &lt;p&gt;N&lt;/p&gt;
+    &lt;p&gt;N&lt;/p&gt;
+    &lt;p&gt;O&lt;/p&gt;
+    &lt;p&gt;T&lt;/p&gt;
+    &lt;br&gt;
+    &lt;p&gt;P&lt;/p&gt;
+    &lt;p&gt;R&lt;/p&gt;
+    &lt;p&gt;O&lt;/p&gt;
+    &lt;p&gt;C&lt;/p&gt;
+    &lt;p&gt;E&lt;/p&gt;
+    &lt;p&gt;S&lt;/p&gt;
+    &lt;p&gt;S&lt;/p&gt;
+    &lt;br&gt;
+    &lt;p&gt;Y&lt;/p&gt;
+    &lt;p&gt;O&lt;/p&gt;
+    &lt;p&gt;U&lt;/p&gt;
+    &lt;p&gt;R&lt;/p&gt;
+    &lt;br&gt;
+    &lt;p&gt;I&lt;/p&gt;
+    &lt;p&gt;N&lt;/p&gt;
+    &lt;p&gt;F&lt;/p&gt;
+    &lt;p&gt;O&lt;/p&gt;
+    &lt;p&gt;R&lt;/p&gt;
+    &lt;p&gt;M&lt;/p&gt;
+    &lt;p&gt;A&lt;/p&gt;
+    &lt;p&gt;T&lt;/p&gt;
+    &lt;p&gt;I&lt;/p&gt;
+    &lt;p&gt;O&lt;/p&gt;
+    &lt;p&gt;N&lt;/p&gt; 
+    &lt;div class="long-text"&gt;
+    &lt;span&gt;ERASE BRAIN&lt;/span&gt;
+    &lt;span &gt;OK&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;    
+</code></pre>
+<img src="images/OK.jpg" alt="OK texts" class="OK">
+</div>
+<!-- p5 shapes -->
+<h2 id="shapes-section" class="coding-heading">p5.js Shapes</h2>
+            <div class="basichtml image-text-container">
+            <p class="basichtml image-description-forth">We covered some basics of p5.js, learning how to create  
+                <a href="https://p5js.org/reference/#Shape" target="_blank"> shapes</a>, position them on the 
+                screen, and add colours. In p5.js, things are drawn in the order I write them. New shapes or elements go on top of the ones 
+                before. So, if something wants to appear in front, it needs to be drawn last.
+        
+                In this code, push() and pop() are used to save and restore the current drawing state. This way, transformations (like rotation,
+                translation, and scaling) are applied to specific elements without affecting the rest. Without 
+                <a href="https://p5js.org/reference/p5/push/" target="_blank">push() and pop()</a>, things like the eyes, nose, and mouth would
+                end up at odd angles because the rotated state would affect everything.</p> 
+            <img src="images/drawface.jpg" alt="Portrait" class="drawface">     
+            </div>
+
+    <div class="basichtml image-text-container">
+    <pre class="basichtml code-snippet-forth"><code> 
+    function setup() {
+    createCanvas(windowWidth, windowHeight);
+    background(135, 20, 235);
+    }
+                
+    function draw() {
+    // hair
+    fill(53, 33, 0);
+    ellipse(width / 2, 0.59 * height, 450, 500);
+    ellipse(width / 3.5, 0.8 * height, 160, 150);
+                
+    // body
+    fill(251, 198, 207);
+    square(width / 4, 0.75 * height, 500, 180);
+                
+    // face
+    fill(255, 252, 180);
+    circle(width / 2, 0.6 * height, 360, 400);
+                
+    // bangs (first one)
+    push();
+    fill(53, 33, 0);
+    rotate(-0.71 * QUARTER_PI);
+    ellipse(0.29 * width, 0.73 * height, 170, 250);
+    pop();
+    // bangs (second one)
+    push();     fill(53, 33, 0);
+    rotate(QUARTER_PI);
+    ellipse(0.57 * width, 0.01 * height, 170, 250);
+    pop();
+                
+    // eyes
+    fill(53, 33, 0);
+    circle(0.42 * width, height / 1.7, 20);
+    circle(0.57 * width, height / 1.7, 20);
+                
+    // nose
+    fill(251, 198, 207);
+    triangle(width / 1.0, 0.65 * height, width / 2.1, 
+    0.65 * height, width / 2, 0.6 * height);
+                
+    // mouth
+    fill(231, 84, 128);
+    ellipse(width / 2, 0.71 * height, 100, 20);
+    }                
+    </code></pre>
+    <img src="images/facep5.jpg" alt="Portrait" class="facep5">  
+</div>
+
+<div class="basichtml image-text-container">
+    <p class="basichtml image-description5">I created shapes that <a href="https://p5js.org/reference/p5/rotate/" target="_blank">rotate</a> 
+        using a variable called angle. As the frameCount increases, the angle also increases, resulting in a continuous rotation of the shapes. 
+        By multiplying frameCount by a larger value, I can make the rotation faster.
+  </p> 
+</div>
+<div class="basichtml image-text-container">
+  <pre class="basichtml code-snippet5"><code> 
+    function setup() {
+    createCanvas(400,400);
+    }
+    function draw() {
+    background(200);
+    let angle = frameCount * 0.05;
+    rotate(angle);
+    fill (0,255,0);
+    rect(100, 50, 80, 40);
+    fill(255, 0, 0);
+    circle(60,60,60);
+    fill(0, 0, 255);
+    triangle(90, 225, 174, 60, 258,225);
+    }
+  </code></pre>
+  <video width="384" controls class="video-rotate">
+    <source src="images/rotateShapes.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>     
+    </div>
+    
+    <h2 id="function-section" class="coding-heading">function</h2>
+    <div class="basichtml image-text-container">
+    <p class="basichtml image-description6">
+    Using a <a href="https://p5js.org/reference/p5/function/" target="_blank">function</a> helps reuse and organize code easily. The function 
+    drawFace(x, y, size) sets up how to draw the emoji by letting you choose its position (x, y) and size. This allows you to draw an emoji at
+     any position and size simply by calling drawFace with different values.</p>
+    <div class="basichtml image-text-container">
+    <pre class="basichtml code-snippet6"><code>
+    function setup() {
+    createCanvas(300,300);
+    }
+    function draw() {
+    background(0,240,0);
+    drawFace(width/2, height/2,100);
+    }
+    function drawFace(x, y, size) {
+    // Style the text.
+    textAlign(CENTER, CENTER);
+    textSize(size);
+    text('😘', x, y);
+    } 
+    </code></pre>
+    <img src="images/emojiface.jpg" alt="emoji face" class="emojiFace">
+</div>
+    </div>
+
+<h2 id="variable-section" class="coding-heading">Creating Variables</h2>
+<div class="basichtml image-text-container">
+<p class="basichtml image-description6">
+    <a href="https://happycoding.io/tutorials/p5js/creating-variables" target="_blank">Variables</a> are containers for storing data, and 
+    <a href="https://p5js.org/reference/p5/let/" target="_blank">let</a> is commonly used to declare them. For example, in the code let 
+    message = 'Hello, 🌍!';, a variable named message is created and assigned the string 'Hello, 🌍!'.</p>
+
+    <p class="basichtml image-description6">
+    When a let variable is declared outside any function, it becomes a global variable, meaning it can be accessed from anywhere in the code.
+    If let is declared inside a function like setup(), it has block scope and can only be used within that function.
+    Variables can also be declared using other keywords:
+    <ul>
+    <li><strong>var</strong> is an older way of creating variables, mostly replaced by let.</li>
+    <li><strong>const</strong> creates a variable that can't be changed (constant).</li>
+    </ul>
+    </p>
+    <div class="basichtml image-text-container">
+    <pre class="basichtml code-snippet6"><code>
+    let message = 'Hello, 🌍!';
+    function setup() {
+    createCanvas(300, 300);
+    background(255, 255, 0);
+    textAlign(CENTER);
+    textSize(40);
+    text(message, width / 2, height / 2);
+    }
+    function draw() {
+    text(message,width/4,height/4);
+    text(message,width,height);
+     }
+    </code></pre>
+    <img src="images/let.jpg" alt="let" class="let">
+    </div>
+</div>
+
+    <h2 id="boolean-section" class="coding-heading">Boolean</h2>
+    <div class="basichtml image-text-container">
+    <p class="basichtml image-description6">
+    A <a href="https://p5js.org/reference/p5/Boolean/" target="_blank">Boolean</a> is simply a type of value that can be either true or false. 
+    Think of it like a simple "yes or no" answer to a question.</p>
+    <p class="basichtml image-description6">
+    In this code, <a href="https://p5js.org/reference/p5/mouseIsPressed/" target="_blank">mouseIsPressed</a> and keyIsPressed are booleans. 
+    They each check if the mouse or any key 
+    is pressed, giving a true or false answer.
+    The line if (mouseIsPressed === true || keyIsPressed === true) checks if either one is true (meaning the mouse or a key is pressed). If so,
+     the background turns pink. </p>
+    <div class="basichtml image-text-container">
+      <pre class="basichtml code-snippet6"><code>
+    function setup() {
+    createCanvas(100, 100);
+    }
+    function draw() {
+    background(200);
+    if 
+    (mouseIsPressed === true||keyIsPressed === true) {
+    background('deeppink');
+    }
+    }
+    </code></pre>
+    <video width="384" controls class="video-mouseIsPressed">
+        <source src="images/mouseIsPressed.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>     
+        </div>
+    </div>
+    <h2 id="if-section" class="coding-heading">If statement</h2>
+    <div class="basichtml image-text-container">
+    <p class="basichtml image-description6">
+    An <a href="https://happycoding.io/tutorials/p5js/if-statements" target="_blank">if statement</a> can check one or more conditions, allowing you to 
+    create more complex decisions using logical <a href="https://www.w3schools.com/js/js_operators.asp" target="_blank">operators</a> like && for
+     "and" and || for "or." In this code, it first checks if the score is 90 or higher. If that's false, it moves on to check if the score
+    is 80 or higher. If that’s also false, it checks if the score is 70 or higher, and so on. Since the score is 85, the program displays
+    "Good job!" If the score were 60, it would trigger the condition for scores below 70, displaying "Not good!"</p>
+    <div class="basichtml image-text-container">
+    <pre class="basichtml code-snippet6"><code>
+    function setup() {
+    createCanvas(200, 100);
+    fill(0);
+    textSize(18);
+    }
+    function draw() {
+    let score = 60;
+    if (score >= 90) {
+    background(0, 255, 0);
+    text('Congratulations!', 30, 55);
+    }
+    else if (score >= 80) {
+    background(0, 100, 255);
+    text('Good job!', 60, 55);
+    }
+    else if (score >= 70) {
+    background(255, 255, 0);
+    text('Just okay.', 60, 55);
+    }
+    else if (score >= 60) {
+    background(255, 128, 0);
+    text('Not good!', 60, 55);
+    }
+    else {
+    background(255, 0, 0);
+    text('Study more!', 50, 55);
+    }
+    }
+    </code></pre>
+    <img src="images/goodjob.jpg" alt="good job" class="goodjob">
+    <img src="images/notgood.jpg" alt="not good" class="notgood">
+</div>
+</div>
+
+<h2 id="bouncingBall-section" class="coding-heading">Bouncing Ball Animation</h2>
+<div class="basichtml image-text-container">
+    <p class="basichtml image-description6">
+    We can create a simple <a href="https://happycoding.io/tutorials/p5js/animation" target="_blank">animation</a> like this bouncing ball on a 
+    canvas by setting up variables for the circle's position and speed. The xSpeed and ySpeed to control how fast it moves.
+    In the condition if(circleX < 0 || circleX > width), we check if the circle has gone off the left edge (when circleX is less than 0) or 
+    the right edge (when circleX is greater than the width of the canvas).</p>
+    <p class="basichtml image-description6">           
+    If it does hit an edge, we multiply xSpeed by -1. This reverses the circle’s direction, so if it's moving right and hits the right edge, 
+    it starts moving left instead.  The logic for circleY is similar. When circleY is checked against the top and bottom edges, if it goes 
+    beyond those limits, we multiply ySpeed by -1. This changes the circle's vertical direction, so if it’s moving down and hits the bottom
+     edge, it starts moving up.</p> 
+     <div class="basichtml image-text-container">
+        <pre class="basichtml code-snippet6"><code> 
+    let circleX = 100;
+    let circleY = 0;
+    let xSpeed = 3;
+    let ySpeed = 3;
+    function setup() {
+    createCanvas(400, 400);
+    }
+    function draw() {
+    background(32);
+    circle(circleX, circleY, 80);
+    circleX = circleX + xSpeed;
+    circleY = circleY + ySpeed;
+    //bounce off left and right
+    if(circleX < 0 || circleX > width) {
+    xSpeed = xSpeed * -1;
+    }
+    // bounce off top and bottom
+    if(circleY < 0 || circleY > height) {
+    ySpeed = ySpeed * -1;
+    }
+    }
+
+</code></pre>
+    <video width="384" controls class="video-bouncingBall">
+    <source src="images/bouncingBall.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>     
+    </div>
+</div>
+       
+<h2 id="randomdots-section" class="coding-heading">Colourful Random Dots</h2>
+    <div class="basichtml image-text-container">
+    <p class="basichtml image-description6">
+    This sketch creates colourful random dots on the canvas. In the draw() function, the drawRandomDots() function is called, passing a
+    <a href="https://p5js.org/examples/calculating-values-random/" target="_blank">random</a> number between 5 and 20 as an argument. 
+    This means that each time the draw() function runs, a different number of dots can be generated.
+    Inside the drawRandomDots(numDots) function, a loop iterates numDots times to draw the specified number of dots. Within each iteration of 
+    the loop, random x and y positions are generated to place the dots anywhere within the canvas. Additionally, a random size for each dot is 
+    created, ranging from 5 to 100 pixels.
+
+    The fill() function sets a random colour for each dot, with values for red, green, and blue varying between 0 and 255. Finally, the
+     circle(x, y, size) function draws a circle at the random x and y positions with the specified size and colour.
+
+    The <a href="https://p5js.org/reference/p5/frameRate/" target="_blank">frameRate</a>(2) function is also set, meaning the
+     sketch updates twice per second. Increasing this value will make the dots appear faster.</p>
+     <div class="basichtml image-text-container">
+        <pre class="basichtml code-snippet6"><code> 
+    function setup() {
+    createCanvas(400, 400);
+    background(255, 255, 0);
+    frameRate(2);
+    }
+    function draw() {
+    drawRandomDots(random(5, 20));
+    }
+    function drawRandomDots(numDots) {
+    for (let i = 0; i < numDots; i++) {
+    let x = random(width);
+    let y = random(height);
+    let size = random(5, 100);
+    fill(random(255), random(255), random(255)); 
+    circle(x, y, size);
+    }
+    }
+
+      </code></pre>
+      <video width="384" controls class="video-randomDots">
+        <source src="images/randomDots.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>     
+        </div>
+    </div>
+
+    <h2 id="array-section" class="coding-heading">Snowfall Animation (array)</h2>
+            <div class="basichtml image-text-container">
+            <p class="basichtml image-description6">
+            This code creates a simple animation of circles that fall like snow.
+            An <a href="https://happycoding.io/tutorials/p5js/arrays" target="_blank">array</a> is a way to store multiple values in a single variable,
+             similar to a list. </p>
+             <p class="basichtml image-description6">    
+            In the setup() function, a for loop creates an <a href="https://p5js.org/reference/p5/Array/" target="_blank">array</a> called 
+            circleY with 30 random positions along the height of the canvas.</p>
+             <p class="basichtml image-description6">  
+            In the draw() function, another for loop goes through each item in circleY.
+            <ul>
+            <li>The line let circleX = width * i / circleY.length; calculates the X position for each circle so that the circles are evenly 
+                spaced across the canvas.</li>
+                
+            <li>circle(circleX, circleY[i], 25); draws each circle at its calculated X and Y positions with a size of 25.</li>
+                
+            <li>circleY[i]++ moves each circle down by 1 pixel every time draw() runs, creating a falling effect.</li>
+                
+            <li>if (circleY[i] > height) { circleY[i] = 0; } checks if a circle has reached the bottom of the canvas. If it has, it resets the 
+            circle to the top, so it continues “falling” in a loop.</li></ul>
+        </p>
+        <div class="basichtml image-text-container">
+        <pre class="basichtml code-snippet6"><code> 
+    let circleY = [];
+    function setup() {
+    createCanvas(400, 400);
+    for (let i = 0; i < 30; i++) {
+    circleY[i] = random(height);
+    }
+    }
+    function draw() {
+    background(0);
+    for (let i = 0; i < circleY.length; i++) {
+    let circleX = width * i / circleY.length;
+    circle(circleX, circleY[i], 25);
+    circleY[i]++;
+    if (circleY[i] > height) {
+    circleY[i] = 0;
+    }
+    }
+    }
+
+    </code></pre>
+        <video width="384" controls class="video-snowing">
+            <source src="images/snowing.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>     
+            </div> 
+        </div>
+
+        <h2 id="class-section" class="coding-heading">Bouncing Emojis (class)</h2>
+        <div class="basichtml image-text-container">
+        <p class="basichtml image-description6">
+           This sketch creates a fun animation where emojis move around the canvas and bounce off the edges. The code uses a class called Emoji 
+           to define the behaviours of each emoji.</p>
+        <p class="basichtml image-description6">
+            What is a Class?
+            A <a href="https://happycoding.io/tutorials/p5js/creating-classes" target="_blank">class</a> is a template for creating objects. It defines a set 
+            of attributes (properties) and methods (functions) that the objects created from the class can have. Using a 
+            <a href="https://p5js.org/reference/p5/class/" target="_blank">class</a> allows us to create multiple objects with similar 
+            behaviours and properties without repeating the same code. For example, if I have several emojis, each with its own position, speed,
+            and character, a class helps manage these emojis collectively and individually. Each emoji object can have its own behaviour, 
+            which keeps the code organised.</p>
+            <p class="basichtml image-description6">
+                Let’s break down the code.
+            <ul> 
+            <p class="basichtml image-description6">
+            <strong>Setup Function:</strong>
+           
+            <li>In the setup function, a for loop runs 20 times to create 20 instances of the Emoji class.</li>
+            <li>Each instance receives a random starting position on the canvas (using random(width) and random(height)) and random speeds for
+             both the X and Y directions, ranging between -3 and 3.</li></p>
+             <p class="basichtml image-description6">
+            <strong>Draw Function:</strong>
+            <li>The draw function iterates through each emoji in the emojis array and calls its move() and display() methods.</li>
+             </p>
+             <p class="basichtml image-description6">
+            <strong>Emoji Class Methods</strong>
+            <li>Constructor: The constructor runs when a new instance of the class is created. It initialises the emoji's position (X and Y), 
+            speed (X and Y), and sets the emoji character to "😒".</li>
+           
+            <li>move() Method: This method updates the emoji's position based on its speed. If the emoji hits the edges of the canvas, its
+                 speed is reversed, causing it to bounce back.</li>
+           
+            <li>display() Method: This method draws the emoji at its current position on the canvas.</li>
+           </ul>
+           </p>
+           <div class="basichtml image-text-container">
+            <pre class="basichtml code-snippet6"><code> 
+    let emojis = [];
+    function setup() {
+    createCanvas(400, 400);
+    textAlign(CENTER, CENTER); 
+    textSize(40);
+    for (let i = 0; i < 20; i++) {
+    emojis[i] = new Emoji(random(width),
+     random(height),
+     random(-3, 3), random(-3, 3)); 
+    }
+    function draw() {
+    background(0, 0, 255);
+    for (let i = 0; i < emojis.length; i++) {
+    emojis[i].move();
+    emojis[i].display();
+    }
+    }
+    class Emoji {
+    constructor(x, y, xSpeed, ySpeed) {
+    this.x = x;
+    this.y = y;
+    this.xSpeed = xSpeed;
+    this.ySpeed = ySpeed;
+    this.emoji = "😒"; 
+    }
+    move() {
+    this.x += this.xSpeed;
+    if (this.x < 0 || this.x > width) {
+    this.xSpeed *= -1;
+    }
+    this.y += this.ySpeed;
+    if (this.y < 0 || this.y > height) {
+    this.ySpeed *= -1;
+    }
+    }
+    display() {
+    text(this.emoji, this.x, this.y); 
+    }
+    }
+    </code></pre>
+    <video width="384" controls class="video-bouncingEmoji">
+    <source src="images/bouncingEmoji.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>     
+    </div> 
+    </div>
+    
+    <h2 id="section" class="coding-heading">Using a class function (Project) </h2>
+    <div class="basichtml image-text-container">
+    <p class="basichtml image-description6">I experimented with my project by using a class function.</p>
+    <div class="basichtml image-text-container">
+        <pre class="basichtml code-snippet6">
+            <code>
+    let imgPieces = [];
+    let imagePathPieces = [
+    'data/piece1.png', 'data/piece2.png', 
+    'data/piece3.png',
+    //add your images//
+    ];
+    let pieces = []; 
+    function preload() {
+    for (let i = 0; i < imagePathPieces.length; i++){
+    imgPieces.push(loadImage(imagePathPieces[i]));
+    }
+    }
+    function setup() {
+    createCanvas(windowWidth, windowHeight);
+    background(255);
+    for (let i = 0; i < imgPieces.length; i++) {
+    pieces.push(new Piece(random(width), 
+    random(height), random(-3, 3), random(-3, ), 
+    imgPieces[i]));
+    }
+    }
+    function draw() {
+    background(255);
+    for (let i = 0; i < pieces.length; i++) {
+    pieces[i].move();
+    pieces[i].display();
+    }
+    }
+    class Piece {
+    constructor(x, y, xSpeed, ySpeed, img) {
+    this.x = x;
+    this.y = y;
+    this.xSpeed = xSpeed;
+    this.ySpeed = ySpeed;
+    this.img = img; // Store the image for each piece
+    }
+    move() {
+    this.x += this.xSpeed;
+    if (this.x < 0 || this.x > width) {
+    this.xSpeed *= -1;
+    }
+    this.y += this.ySpeed;
+    if (this.y < 0 || this.y > height) {
+    this.ySpeed *= -1;
+    }
+    }
+    display() {
+    image(this.img, this.x, this.y); 
+    }
+    }
+
+</code>
+</pre>
+<video width="384" controls class="video-classExperiment">
+<source src="images/classExperiment.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>   
+</div>
+</div>
+
+
+    <h2 id="pushandpop-section" class="coding-heading">push() and pop()</h2>
+    <div class="basichtml image-text-container">
+    <p class="basichtml image-description6">
+        This sketch creates an interactive animation where a frog follows the mouse cursor, and flies are flying over the canvas.</p>
+        <p class="basichtml image-description6">
+        What are <a href="https://p5js.org/reference/p5/push/" target="_blank">push() and pop()</a>?
+        These functions manage the drawing state, including transformations like translations, rotations, and scaling. The effect of push() 
+        and pop() is limited to the code between them, meaning transformations applied will not affect other drawings outside this block. 
+        This organisation helps keep the code tidy and prevents unintended transformations from overlapping.</p>
+        <p class="basichtml image-description6">
+        In this code, push() and pop() are used for the mouse position, as well as for the frog's left and right eyes. If I don't use push()
+         and pop(), the drawings could overlap and appear distorted.</p>
+        </div> 
+        <div class="basichtml image-text-container">
+            <pre class="basichtml code-snippet6"><code> 
+    function setup() {
+    createCanvas(400, 400);
+    frameRate(24);
+    }
+    function draw() {
+    background(150, 150, 200);
+    // Draw the face at the mouse position
+    push();
+    translate(mouseX, mouseY);
+    noStroke();
+    fill('green');
+    circle(0, 0, 60);
+    pop(); 
+    // Draw the left eye
+    push(); 
+    translate(mouseX - 20, mouseY - 20);
+    fill('white');
+    ellipse(0, 0, 30, 20);
+    fill('black');
+    circle(0, 0, 8);
+    pop();
+    // Draw the right eye
+    push();
+    translate(mouseX + 20, mouseY - 20); 
+    fill('white');
+    ellipse(0, 0, 30, 20);
+    fill('black');
+    circle(0, 0, 8);
+    pop();
+    //fly
+    let x = random(0, 400);
+    let y = random(0, 400);
+    text('🪰', x, y);
+    }
+          
+    </code></pre>
+    <video width="384" controls class="video-frog">
+        <source src="images/frog.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>     
+        </div>
+
+
+<!-- mouse events -->
+    <h2 id="mouseevents-section" class="coding-heading">Mouse Events</h2>
+            <div class="basichtml image-text-container">
+            <p class="basichtml image-description6">
+                The <a href="https://p5js.org/reference/p5/mousePressed/" target="_blank">mousePressed()</a>
+                function in this code increases the SIZE by 10 each time the mouse is clicked. By increasing the value to 30 instead of 10, 
+                the effect would be even more noticeable.</p>
+
+            <div class="basichtml image-text-container">
+                <pre class="basichtml code-snippet6"><code> 
+    var SIZE;
+    var xPos, Ypos;              
+    function setup() {
+    createCanvas(windowWidth, windowHeight);
+    background(0);
+    textAlign(CENTER);
+    SIZE=80;
+    xPos=width/2;
+    yPos=height/2;
+    frameRate(1);
+    }              
+    function draw() {
+    yPos=random(height);
+    xPos=random(width);
+    fill(255, 255, 0);
+    textSize(SIZE);
+    text('HELLO WORLD', xPos, yPos);
+    }
+    function mousePressed() {
+    SIZE+=10;
+    }
+    </code></pre>        
+    <video width="384" controls class="video-automaticWords">
+        <source src="images/increaseSize.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>     
+        </div>
+            
+    <div class="basichtml image-text-container">
+            <p class="basichtml image-description6">This code features several interesting effects. The text is positioned randomly with 
+                yPos=random(height); and xPos=random(width);, and it rotates based on the mouse’s horizontal position with rotate
+                (<a href="https://p5js.org/reference/p5/mouseX/" target="_blank">mouseX</a>);. 
+                The <a href="https://p5js.org/examples/transformation-translate/" target="_blank">translate</a>(xPos, yPos); is used to set 
+                the new position of the text. "translate" is often used with rotate or scale. 
+                Additionally, a line is drawn following the mouse movements. The \n character starts a new line of text.</p>
+    </div>
+            <div class="basichtml image-text-container">
+            <pre class="basichtml code-snippet6"><code> 
+    var SIZE;
+    var xPos, Ypos;
+    function setup() {
+    createCanvas(windowWidth, windowHeight);
+    background(0);
+    textAlign(CENTER, CENTER);
+    SIZE=80;
+    xPos=width/2;
+    yPos=height/2;
+    frameRate(5);
+    angleMode(DEGREES);
+    }
+    function draw() {
+    background(0, 25);
+    yPos=random(height);
+    xPos=random(width);
+    fill(255, 0, 0);
+    textSize(SIZE);
+    push();
+    translate(xPos, yPos);
+    rotate(mouseX);
+    text('OMG\nno thank you', -width/4, 
+    -height/4, width/2, height/2 );
+    pop();
+    stroke(255, 0,0);
+    strokeWeight(5);
+    line(mouseX, mouseY, pmouseX, pmouseY);
+    }
+    </code></pre>             
+    <video width="384" controls class="video-OMG">
+        <source src="images/OMG.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>     
+        </div>
+
+    <div class="basichtml image-text-container">
+            <p class="basichtml image-description6">In this code, the text rotates according to the mouseX position. The line pic.
+            <a href="https://p5js.org/reference/p5/filter/" target="_blank">filter</a>(BLUR, 3); adds a blur effect to the image. When the 
+            mouse is pressed, the text colour changes to white using an if-else statement. If the mouse button is pressed 
+            <a href="https://p5js.org/reference/p5/mousePressed/" target="_blank">mouseIsPressed</a>, it changes to white. 
+            If the mouse is not pressed (else), it changes to red.</p>
+    </div>
+
+<div class="basichtml image-text-container">
+<pre class="basichtml code-snippet6"><code> 
+    function setup() {
+    createCanvas(windowWidth, windowHeight);
+    background(0);
+    textAlign(CENTER, CENTER);
+    SIZE=80;
+    xPos=width/2;
+    yPos=height/2;
+    frameRate(5);
+    angleMode(DEGREES);
+    }
+    function draw() {
+    background(0);
+    //yPos=random(height);
+    //xPos=random(width);
+    fill(255, 0, 0);
+    if (mouseIsPressed===true) {
+    fill(255);
+    } else {
+    fill(255,0,0);
+    }
+    textSize(SIZE);
+    push();
+    translate(xPos, yPos);
+    noStroke();
+    //rotate(QUARTER_PI);
+    rotate(mouseX);
+    text('HELLO WORLD\nbye world', -width/4, 
+    -height/4, width/2, height/2 );
+    pop();
+    stroke(255, 0,0);
+    strokeWeight(5);
+    line(mouseX, mouseY, pmouseX, pmouseY);
+    pic.filter (BLUR,6);
+    image(pic, width/2-300, height/2);
+    }
+    var SIZE;
+    var xPos, Ypos;
+    function preload(){
+    pic=loadImage('data/lazy.jpg');
+    }
+    </code></pre>
+    <img src="images/blurimage.png" alt="blur" class="blurimage">  
+</div>
+
+<div class="basichtml image-text-container">
+    <p class="basichtml image-description6">
+    This code shows how to interact when the mouse is dragged. When the mouse is dragged 
+    (<a href="https://p5js.org/reference/p5/filter/" target="_blank">mouseDragged()</a>), it increments the value by 5, 
+    and if the value hits 255, it goes back to 0. Basically, it changes the green shade of the square when the mouse is dragged. 
+    If the mouse is not pressed (else), it changes to red. Check out more 
+    <a href="https://p5js.org/reference/#Mouse" target="_blank">mouse</a> functions here.</p>
+</div>
+
+<div class="basichtml image-text-container">
+    <pre class="basichtml code-snippet6"><code> 
+    let value = 0;
+    function setup() {
+    createCanvas(windowWidth, windowHeight);
+    }
+    function draw() {
+    background(255);
+    fill(0, value, 0);// Blue shade 
+    square(25, 25, 400); 
+    }
+    function mouseDragged() {
+    value += 5;
+    if (value > 255) {
+    value = 0;
+    }
+    }
+
+</code></pre>
+<video width="384" controls class="video-mouseDragged">
+    <source src="images/mouseDragged.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>   
+</div>
+
+<h2 id="mousepressed-section" class="coding-heading">Circle Wave: mousePressed()</h2>
+    <div class="basichtml image-text-container">
+    <p class="basichtml image-description6">
+        This sketch creates an animation where colourful circles expand from the point where the mouse is clicked.
+        In the draw() function, circleSize += 5 increases the size of the circles by 5 pixels each time the function runs. This makes the
+         circles grow continuously.
+        The <a href="https://p5js.org/reference/p5/mousePressed/" target="_blank">mousePressed()</a> function is triggered whenever the mouse is
+        clicked. The lines circleX = mouseX; and circleY = mouseY; update the position of the circles to where the mouse was clicked. 
+        Additionally, circleSize = 0; resets the size of the circles to 0, allowing them to start growing again from the click point.</p>
+        <div class="basichtml image-text-container">
+        <pre class="basichtml code-snippet6"><code> 
+    let circleX;
+    let circleY;
+    let circleSize;
+    function setup() {
+    createCanvas(400, 400);
+    noFill();
+    strokeWeight(5);
+    circleX = width / 2;
+    circleY = height / 2;
+    circleSize = 0;
+    }
+    function draw() {
+    background(0, 0, 255);
+    circleSize += 5;
+    stroke(255, 255, 0);
+    circle(circleX, circleY, circleSize);
+    circle(circleX, circleY, circleSize * .2);
+    circle(circleX, circleY, circleSize * .4);
+    circle(circleX, circleY, circleSize * .6);
+    circle(circleX, circleY, circleSize * .8);
+    circle(circleX, circleY, circleSize * .10);
+    }
+    function mousePressed(){
+    circleX = mouseX;
+    circleY = mouseY;
+    circleSize = 0;
+    }
+    
+    </code></pre>
+          <video width="384" controls class="video-circleWave">
+            <source src="images/circleWave.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>     
+            </div>
+    </div>
+
+<h2 id="customcursor-section" class="coding-heading">Custom Cursor</h2>
+
+<div class="basichtml image-text-container">
+    <pre class="basichtml code-snippet6"><code> 
+    var pic;
+    function preload(){
+    pic = loadImage("data/lazy.jpg"); 
+    }
+    function setup() {
+    createCanvas(windowWidth, windowHeight);
+    background("blue");
+    imageMode(CENTER, CENTER);
+    }
+    function draw(){
+    image(pic, mouseX, mouseY, 100, 100);
+    }
+
+</code></pre>
+<video width="384" controls class="video-mouseImage">
+    <source src="images/mouseImage.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>   
+</div>
+    </div>
+
+<h2 id="radiobutton-section" class="coding-heading">Radio Button</h2>
+<div class="basichtml image-text-container">
+<p class="basichtml image-description6">
+    This code demonstrates how to create a radio button using the <a href="https://p5js.org/reference/p5/createRadio/" target="_blank">
+    createRadio()</a> function. While the radio button is stored in the variable named myRadio, you can choose any name for this variable. 
+    The line button = <a href="https://p5js.org/reference/p5/createButton/" target="_blank">createButton</a>('click me'); creates a button 
+    labeled "click me."</p>
+    <p class="basichtml image-description6">   
+    Additionally, the statement <a href="https://p5js.org/reference/p5/let/" target="_blank">let</a> buttons = []; creates an empty array to hold multiple buttons. Then, with a for loop, the program 
+    generates 100 "click me" buttons, each randomly placed across the screen, making for a fun interaction.</p>
+    <div class="basichtml image-text-container">
+
+    <pre class="basichtml code-snippet6"><code> 
+    var myRadio;
+    function setup() {
+    createCanvas(windowWidth, windowHeight);
+    background("blue");
+    imageMode(CENTER, CENTER);
+    // Create a radio button element and place it
+    myRadio = createRadio();
+    myRadio.position(width/4, height/4);
+    myRadio.size(100);
+    // Add a few color options.
+    myRadio.option('red');
+    myRadio.option('yellow');
+    myRadio.option('blue');
+    // Choose a default option.
+    myRadio.selected('yellow');
+    let div = createDiv &lt;h3&gt;
+    HELLO WORLD&lt;/h3&gt;
+    div.position(width/2, height/2)
+    //image(pic, mouseX, mouseY, 100, 100);
+    button = createButton('click me');
+    button.position(width/2, height/2);
+    let buttons=[];
+    for (let i=0; i<100;i++){
+    buttons[i]=createButton ('click me');
+    buttons[i].position(random(width),
+     random(height));
+    }
+    }
+    function draw() {
+    let g = myRadio.value();
+    background(g)
+    }    
+    
+</code></pre>
+<video width="384" controls class="video-radioButton">
+        <source src="images/radioButton.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>   
+</div>
+</div>
+<h2 id="sound-section" class="coding-heading">Play a Sound</h2>
+<div class="basichtml image-text-container">
+<p class="basichtml image-description6">
+This code demonstrates how to add and play a sound. It uses loadSound() to load an audio file from the data folder. In the setup() function,
+    getAudioContext().suspend(); is called to prevent the sound from playing automatically.
+</p>
+<p class="basichtml image-description6">
+    In the mousePressed() function, when you click the mouse, the program checks if the audio is paused. If it is, the sound will play. The 
+    keyTyped() function is triggered whenever a key is pressed. If the space bar is pressed (using if (key === " ")), the sound stops. For any
+     other key, the sound starts playing again, giving users control over the audio.
+</p>
+<p class="basichtml image-description6">
+    The <a href="https://p5js.org/reference/p5/if/" target="_blank">if</a> statements are crucial because they allow the program to make
+    decisions based on user actions. In this code, checking if the space bar is pressed determines whether the sound stops or plays.</p>
+</div>
+<div class="basichtml image-text-container">
+    <pre class="basichtml code-snippet6"><code> 
+    var song;
+    function preload(){
+    song= loadSound("data/lion-roar-6011.mp3");
+    }
+    function setup() {
+    createCanvas(windowWidth, windowHeight);
+    background(255, 255, 0);
+    getAudioContext().suspend();
+    }
+    function draw() {
+    background(255, 255, 0);
+    circle(mouseX, mouseY, 60);
+    }
+    function mousePressed() {
+    if (getAudioContext().state !== 'running') {
+    getAudioContext().resume();
+    song.play();
+    song.loop();
+    }
+    }
+    function keyTyped(){
+    if (key === " "){ //space bar
+    song.stop();
+    }
+    else {//any other key
+    song.play();
+    }
+    }
+    </code></pre>
+    
+    <video width="384" controls class="video-roarSound">
+    <source src="images/roarSound.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>   
+    </div>
+
+
+
+    <h2 id="wiggly-section" class="coding-heading">Animating Text (wiggly letters)</h2>
+    <div class="basichtml image-text-container">
+    <p class="basichtml image-description6">
+    This code creates fun, wiggly letters on the screen and has many things to mention regarding new methods and functions in this code. 
+     The loop for (var i = 0; i < wigglyLetters.length; i++) goes through each letter in the wigglyLetters array. Without this loop, only one
+    letter would show at a time. The giggle() method makes the letters wiggle by changing their size randomly, which can increase or decrease
+    by up to 20 pixels.
+    </p>
+    <p class="basichtml image-description6">
+    When you click the mouse, the mousePressed() function generates a <a href="https://p5js.org/reference/p5/random/"target="_blank">random</a> 
+    number between 65 and 159 (with 160 not included). 
+    The <a href="https://p5js.org/reference/p5/char/#:~:text=char()%20converts%20numbers%20to,single%2Dcharacter%20string%20is%20returned." 
+    target="_blank">char</a>(rand) function turns that number into a character, like 'A' for 65 and 'B' for 66, using the 
+    <a href="https://www.asciitable.com/" target="_blank">ASCII table</a>. The line wigglyLetters.push(new Wiggle (mouseX, mouseY, size, letter,
+    speed)); creates a new wiggle object at the mouse's position with the random letter, size, and speed. The .push() method adds this new Wiggle 
+    object to the wigglyLetters array. So, every time you click the mouse, a new letter is created and added to the array, while the existing
+     letters keep showing and wiggling.
+    </p>
+    <p class="basichtml image-description6">
+    A <a href="https://p5js.org/reference/p5/class/" target="_blank">class</a> is like a template that helps us create many similar objects 
+    without rewriting code. Each letter created with new Wiggle(...) is an instance of the Wiggle class. Each instance can have its own unique 
+    values, like position and size. The constructor sets up these starting values for each new wiggly letter. The display() method is what 
+    actually shows the letters on the screen. The line textSize(this.textSize) makes the letters display in their random sizes; without it, 
+    they would just show in the default size. The text(this.letter, this.x, this.y) line draws the letter on the canvas. If this line were 
+    missing, no letters would appear.
+    </p>
+    <p class="basichtml image-description6">
+    Finally, the <a href="https://p5js.org/reference/p5/windowResized/" target="_blank">windowResized()</a> function keeps the canvas size 
+    adjustable. This means that if you change the window size, the canvas will resize to fit accordingly. I found it exciting to see how each 
+    click generates a new, animated letter. The combination of looping, randomization, and classes creates a dynamic and engaging visual. 
+    </p>
+    </div>
+
+    <div class="basichtml image-text-container">
+    <pre class="basichtml code-snippet6">
+    <code>
+    var wigglyLetters=[];
+    var size=32;
+    var speed=1;
+    var letter, rand, xposition, yposition;
+    function setup() {
+    createCanvas(windowWidth, windowHeight);
+    background(0);
+    textSize(32);
+    textFont("Times"); 
+    }
+    function draw() {
+    background(0);
+    fill(255,255,0);
+    noStroke();
+    for (var i=0; i &lt; wigglyLetters.length; i+=1){   
+    wigglyLetters[i].giggle();
+    wigglyLetters[i].display();
+    }
+    }
+    function mousePressed() {
+    rand = int(random(65, 160));
+    letter= char(rand);
+    //text(letter, mouseX, mouseY);
+    //new wiggle class : position x, positiony, 
+    size, letter,
+    speed wigglyLetters.push(new Wiggle 
+    (mouseX, mouseY, size, letter, speed));
+    }
+    class Wiggle {
+    constructor(x, y, size, letter, speed){
+    this.x=x;
+    this.y=y;
+    this.textSize=size;
+    this.speed=speed;
+    this.letter=letter;
+    }
+    giggle(){
+    this.x+=random(-4, 4);
+    this.y+=random(-4, 4);
+    this.textSize+=random(-20, 20);
+    }
+    // draws the elements to the screen 
+    display(){
+    textSize(this.textSize);
+    text(this.letter, this.x, this.y);
+    }
+    }
+    function windowResized(){
+    resizeCanvas(windowWidth, windowHeight);
+    }
+</code>
+</pre>
+    <video width="384" controls class="video-wigglewiggle">
+        <source src="images/wigglewiggle.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>   
+        </div>
+    
+<h2 id="texttopoints-section" class="coding-heading">textToPoints()</h2>
+    <div class="basichtml image-text-container">
+    <p class="basichtml image-description6">
+    This code creates a dynamic, animated visual by using the <a href="https://p5js.org/reference/p5.Font/textToPoints/#:~:text=sampleFactor%20is%20the%20ratio%20of,a%20number%20other%20than%200." target="_blank">
+    textToPoints()</a> function, which converts the text "BREAKING ART" into points.Specifically, it transforms each character outline into 
+    an array of points stored in the variable pts.</p>
+    <p class="basichtml image-description6">
+    Two parameters are used in the textToPoints() function. The sampleFactor controls the density of the points; lower values result in fewer 
+    points, creating a sparser representation of the text. The simplifyThreshold defines how closely the points follow the text's outline;
+     a lower threshold means the points will be placed closer to the original shape of the text. There are three rows of the text "BREAKING ART,"
+    positioned using the <a href="https://www.geeksforgeeks.org/p5-js-translate-function/" target="_blank">translate()</a> function. The first row is
+    positioned at (20, 140), which means the text is moved 20 pixels to the right (x) and 140 pixels down (y) from the top-left corner of the
+    canvas.
+    </p>
+    <p class="basichtml image-description6">
+The loop (<a href="https://p5js.org/reference/p5/for/" target="_blank">for</a>(let i = 0; i < pts.length; i++)) ensures that an ellipse is drawn for each point in the pts array. The command 
+ellipse(pts[i].x, pts[i].y, 3, 3); draws a small circle (3 pixels wide and 3 pixels high) at each point's coordinates, visually creating a
+ dotted outline along the text.
+    </p>
+    <p class="basichtml image-description6">
+    The second text uses beginShape(POINTS) to give it a wavy effect. 
+    Here’s what’s happening. The beginShape(POINTS) starts shaping the text with individual points instead of lines, making it look dotted and 
+    animated. The for loop goes through each point in the text outline,drawing one point per loop. The 
+    <a href="https://p5js.org/reference/p5/vertex/" target="_blank">vertex()</a> function defines each point in this custom shape. Note that
+    vertex() needs to be wrapped inside  <a href="https://p5js.org/reference/p5/beginShape/" target="_blank">beginShape()</a> and 
+    <a href="https://p5js.org/reference/p5/endShape/" target="_blank">endShape()</a> to work. 
+    In vertex(pts[i].x + sin(frameCount * 0.1 + pts[i].y * 0.1) * 5, pts[i].y);:pts[i].x and pts[i].y are the basic x and y coordinates 
+    for each text point. <a href="https://p5js.org/reference/p5/sin/" target="_blank">sin(...)</a> creates the wave motion:frameCount * 0.1 
+    controls how fast the wave moves over time. pts[i].y * 0.1 varies each point’s movement along the y-axis, making the wave smoother.
+     * 5: Adjusts the wave size. Finally, endShape() wraps up the shape, ensuring that everything displays correctly. Without this, the shape
+      (text) wouldn't appear.
+    </p>
+    <p class="basichtml image-description6">
+    The third text effect creates a dynamic, 3D-like motion using some mathematical functions to animate the text. 
+    To achieve this oscillating effect, two variables, rotX and rotY, control how each line moves away from its original x and y positions. 
+    These values are recalculated every frame, giving the text its animated, wavy effect over time.
+    rotX uses sin() for horizontal movement.
+    rotY uses <a href="https://p5js.org/reference/p5/cos/" target="_blank">cos()</a>, which creates up-and-down motion along the vertical axis. 
+    Sine(sin) and cosine(cos) are similar, but they start at different points, which creates a staggered movement. 
+    The line(...) function then draws short lines from each point to its new position, making the text appear to pop out and move. The line(...) 
+    function has two sets of coordinates: the first is the original point, and the second is the new position after applying rotX and rotY.
+     This offset gives the text its dynamic look.   
+    </p>
+    <p class="basichtml image-description6">
+    The last part of the code creates a jittery effect on the text. The line(...) function takes four parameters: x1, y1, x2, and y2, which 
+    define the starting and ending points of each line. By adding random(-10, 10) to the ending point coordinates, the lines' endpoints are 
+    slightly shifted, resulting in a jittery appearance.     
+    </p>
+    <div class="basichtml image-text-container">
+        <pre class="basichtml code-snippet6">
+        <code>
+    let pts;
+    let ultra;
+    function preload(){
+    //LOAD YOUR FONT HERE!
+    ultra = loadFont('data/Ultra-Regular.ttf');
+    }
+    function setup() {
+    createCanvas(windowWidth, windowHeight);
+    // this part traces the text as points
+    pts = ultra.textToPoints
+    ('BREAKING ART', 0, 0, width/10,{
+    sampleFactor: 0.25,
+    simplifyThreshold: 0
+    });
+    }
+    function draw() {
+    background(220);
+    translate(20, 140);
+    fill(255,0,0);
+    noStroke();
+    //Dotted text
+    for(let i =0; i< pts.length; i++){
+    ellipse(pts[i].x, pts[i].y, 3,3); 
+    }
+    //wavy text
+    translate(0, height/4);
+    beginShape(POINTS);
+    stroke(0);
+    for(let i =0; i< pts.length; i++){
+    vertex(pts[i].x + 
+    sin(frameCount*0.1 + pts[i].y*0.1)*5, 
+    pts[i].y);
+    }
+    endShape();
+    //3D shifting text
+    translate(0, height/4);
+    noFill();
+    let rotX = sin(frameCount/20) * 15;
+    let rotY = cos(frameCount/20) * 15;
+    for(let i =0; i< pts.length; i++){      
+    line(pts[i].x, pts[i].y, pts[i].x - 
+    rotX, pts[i].y - rotY);
+    }
+    textFont(ultra);
+    textSize(width/10);
+    text('BREAKING ART', 0, 0);
+    fill(255,0,0,80);
+    text('BREAKING ART', -rotX, -rotY);
+    //jittery text
+    translate(0, height/4);
+    for(let i =0; i< pts.length; i++){
+    line(pts[i].x, pts[i].y, pts[i].x + 
+    random(-10,10), pts[i].y+ random(-10,10));
+    }
+    }
+    </code>
+    </pre>
+        <video width="384" controls class="video-TextToPoints">
+            <source src="images/TextToPoints.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>   
+    </div>
+
+    <h2 id="multiplecanvases-section" class="coding-heading">Make Multiple Canvases</h2>
+    <div class="basichtml image-text-container">
+    <p class="basichtml image-description6">
+    This code shows how to <a href="https://p5js.org/examples/advanced-canvas-rendering-multiple-canvases/" target="_blank">create multiple canvases</a> while providing a fun interactive experience. As you move the mouse, a circular 
+    spotlight appears, revealing the text against a yellow background.
+    </p>
+    <div class="basichtml image-text-container">
+        <pre class="basichtml code-snippet6">
+        <code>
+    let p, r; //two graphics canvases
+    function setup() {
+    createCanvas(windowWidth, windowHeight);
+    //this is the top layer
+    p = createGraphics(width, height);
+    // this is the text layer
+    r = createGraphics(width, height); 
+    p.background(0);
+    r.background(255,255,0);
+    r.textAlign(CENTER, CENTER);
+    p.fill(0);
+    r.textSize(120);
+    r.text("Surprise!", width/2, height/2);
+    }
+    function draw() {
+    r.text("Surprise!", width/2, height/2);
+    image(r, 0, 0); 
+    image(p, 0, 0); 
+    p.erase();
+    p.circle(mouseX, mouseY, 70);
+    }
+        </code>
+        </pre>
+    <video width="384" controls class="video-Surprise">
+    <source src="images/Surprise.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>   
+    </div>
+    </div>
+    
+    <h2 id="project-section" class="coding-heading">Breaking ART (Project)</h2>
+    <div class="basichtml image-text-container">
+        <img src="images/projectHome.jpg" alt="Project homepage" class="projectHome">
+
+        <video width="384" controls class="video-finalProject">
+            <source src="images/finalProject.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>   
+        </div>
+    </div>
+    <div class="basichtml image-text-container">
+    <p class="basichtml image-description6">
+    This is my final project. Here’s the breakdown.<br>
+    In the statement <a href="https://happycoding.io/tutorials/p5js/if-statements" target="_blank">if</a> (this.x < 0 || this.x > width), the 
+    conditional checks the object's position along the x-axis. It evaluates two conditions: first, whether the object has moved off the left 
+    side of the canvas (this.x < 0), and second, whether it has moved off the right side of the canvas (this.x > width). If either condition 
+    is true, it means the object is too far left or too far right. In this case, the code this.xSpeed *= -1; will be executed. This line is 
+    shorthand for this.xSpeed = this.xSpeed * -1. If the object is moving to the right, multiplying its speed by -1 causes it to move to the 
+    left, and vice versa. Thus, this code effectively makes the object bounce back when it reaches the edges of the canvas.</p>
+    </div>
+
+    <p class="basichtml image-description6">
+    I created a Constructive class for random text that users will interact with later. This class uses the same logic as the Piece class
+     but includes a textSize method to display different text sizes. The this.word variable refers to the customWords defined earlier. I added
+     two colors for random display and a drop shadow effect for better readability, using this.shadowOffsetX and this.shadowOffsetY to control
+     the shadow's position. The randomizeSize() method assigns random text sizes between 20 and 200 pt. In the display() method, I call the 
+     necessary variables to render the text on the screen. The shadow is positioned using this.x and this.y, ensuring it appears where the text
+     is clicked.
+    </p>
+    <p class="basichtml image-description6">
+    In the draw() function, if showScissors is true, it shows images and text. If it's false (if (!showScissors)), the code goes through each 
+    item in the pieces array using a loop (for (let i = 0; i < pieces.length; i++)). The 
+    <a href="https://happycoding.io/tutorials/p5js/arrays" target="_blank">length</a> property ensures the loop covers all items in the
+    <a href="https://p5js.org/reference/p5/Array/" target="_blank">array</a>.
+    Without it, pieces wouldn't be shown. The move() and display() methods come from the Piece class and they make each piece move and render
+    on the screen. After updating their positions, it displays the text and constructive letters as well.
+    </p> 
+    <p class="basichtml image-description6">
+    In the function displyImages(), the for (let img of imgPieces) means that it iterates over each element in the imgPieces array. This
+    allows us to easily access each image in the imgPieces array without needing to use an index[i]. The let imageRatio = img.width / img.height;
+    maintains the aspect ratio when displaying it. 
+   </p> 
+   <p class="basichtml image-description6">
+    The code checks if the aspect ratio of the display area (width divided by height) is less than that of the image 
+    (<a href="https://p5js.org/reference/p5/if/" target="_blank">if</a> (width / height < imageRatio)). If true, the display area is narrower, it sets the image's width to the display width and calculates
+    its height to maintain the aspect ratio(  imgHeight = width / imageRatio;). If the display area is taller (false), it sets the image's 
+    height to the display height and calculates the width accordingly(imgWidth = height * imageRatio;). Basically, it ensures that the image
+    fits within the display, keeping its original proportions.
+    </p>    
+    <p class="basichtml image-description6">
+    The code checks if the image has a specified position with if (img.position). If it does, push() and pop() are used to manage the drawing 
+    state. The <a href="https://p5js.org/reference/p5/push/" target="_blank">push()</a> and pop() will only affect between push() and pop(),
+    it won't affect other drawings. This is helpful for keeping code organised and preventing transformations from others. This code will 
+    still run without push and pop but I just added in case. The<a href="https://p5js.org/examples/transformation-translate/" target="_blank"> 
+    translate</a> (img.position.x, img.position.y) moves the origin to the image's position, and 
+    <a href="https://p5js.org/reference/p5/imageMode/" target="_blank">imageMode</a>(CENTER) centers the image at that 
+    point when drawing it with image(img, 0, 0, imgWidth, imgHeight). If the image doesn't have a defined position, it calculates the 
+    coordinates to center it on the canvas using (width - imgWidth) / 2 and (height - imgHeight) / 2. </p>
+    <p class="basichtml image-description6">   
+    If showScissors is true, it draws a dashed line across the canvas and sets the scissors' dimensions. It calculates scissorsHeight based
+    on a predefined scissorsWidth of 170, maintaining the image's original aspect ratio. The scissors are positioned towards the bottom right
+    of the canvas.
+    </p>
+    <p class="basichtml image-description6">
+    I used these two functions to draw a dashed line. Firstly, the drawDashedLine function really draws the dashed line on the canvas. In the
+    drawDashedLine(x1, y1, x2, y2, dashLength, gapLength), this means x1 and y1 are the starting points of the line, x2 and y2 are the ending
+    points of the line, dashLength is the length of the dashes in the dashed line, and gapLength is the length of the gaps between dashes.
+    Secondly, the <a href="https://editor.p5js.org/squishynotions/sketches/Ax195WTdz" target="_blank">setLineDash(list)</a> is an array 
+    containing the lengths of dashes and gaps, and it applies the dash pattern to the line. 
+    The <a href="https://p5js.org/reference/p5/drawingContext/" target="_blank">drawingContext</a> in p5.js is the part of the canvas that lets you 
+    draw things directly using HTML5 Canvas features. It gives you access to more advanced drawing options, like setting dashed lines or using 
+    special effects that you can’t do with the basic p5.js functions. 
+    </p>
+    <p class="basichtml image-description6">
+    In the breakTexts() function, the loop iterates over each item in the textPositions 
+    <a href="https://happycoding.io/tutorials/p5js/using-objects#instances" target="_blank">array</a>. It assigns the x coordinate to a 
+    <a href="https://p5js.org/reference/p5/random/" target="_blank">random</a> value between 0 and the canvas width, and the y coordinate to
+     a random value between 0 and the canvas height. This effectively moves each text position to a new random location within the canvas.
+    </p>
+    <p class="basichtml image-description6"> 
+    In the <a href="https://p5js.org/reference/p5/mousePressed/" target="_blank">mousePressed()</a> function, if the audio context is not 
+    running (if (getAudioContext().state<a href="https://p5js.org/reference/p5/Boolean/" target="_blank"> !==</a> 'running')), it resumes the audio context, ensures the audio is running. 
+</p>
+    <p class="basichtml image-description6">
+        Mouse X-Coordinate Check:
+        <a href="https://www.youtube.com/watch?v=Rk-_syQluvc" target="_blank">mouseX >= scissorsX</a>: This checks if the mouse is to the
+        right of or exactly on the left edge of the scissors.
+        mouseX <= scissorsX + scissorsWidth: This checks if the mouse is to the left of or exactly on the right edge of the scissors.
+        Mouse Y-Coordinate Check:
+        mouseY >= scissorsY: This checks if the mouse is below or exactly on the top edge of the scissors.
+        mouseY <= scissorsY + scissorsHeight: This checks if the mouse is above or exactly on the bottom edge of the scissors.
+        If all these conditions are true, it means the user has clicked on the scissors. This process ensures that the click is registered only when the mouse is directly over the scissors, providing an accurate interaction experience.
+    </p>
+    <p class="basichtml image-description6">
+    When the scissors are clicked, the breakTexts() function is called, hiding the scissors (showScissors = false). If the cutting sound is 
+    loaded, it plays the sound and calls activatePieces(). If the scissors are not visible (else if (!showScissors)), a new Constructive object
+     is created at the current mouse position (mouseX and mouseY). The size of this text will be random (newConstructive.randomizeSize()).
+    This new object is added to the constructiveLetters array using push(), which organises all Constructive objects. The wordIndex++ ensures 
+    a different word from customWords is used each time. Finally, if the placement sound is loaded, it plays the sound.
+    </p>
+    <p class="basichtml image-description6">
+    The activatePieces() function creates new pieces and adds them to the pieces array. Each piece is assigned a random position (x and y) 
+    within the canvas dimensions (width and height). The random values for movement in both the x and y directions (using random(-3, 3))
+     determine the speed and direction of movement. If the generated values are larger, the pieces will move faster.
+    </p>
+<div class="basichtml image-text-container">
+    <pre class="basichtml code-snippet7">
+    <code>
+    let imgPieces = [];
+    let imgScissors;
+    let scissorsX, scissorsY;
+    let scissorsWidth, scissorsHeight;
+    let showScissors = true;
+    let textPositions = [];
+    let displayedText = '';
+    let imagePathPieces = [
+    'data/piece1.png',
+    //more images//
+    ];
+    let cuttingSound;
+    let placeSound;
+    let constructiveLetters = [];
+    let size = 32;
+    let speed = 1;
+    let wordIndex = 0;
+    let customWords = ["WE LOVE", "INSTABILITY AND", "CHAOS", "BECAUSE", 
+    "THEY", "STAND FOR", "PROGRESS", "ART", "MUST BE", "DESTRUCTIVE", 
+    "AND", "CONSTRUCTIVE"];
+    let pieces = []; 
+    function preload() {
+    for (let i = 0; i < imagePathPieces.length; i++) {
+    imgPieces.push(loadImage(imagePathPieces[i]));
+    }
+    imgScissors = loadImage('data/scissorsGif.gif');
+    cuttingSound = loadSound("data/cutting-paper.mp3");
+    placeSound = loadSound("data/place.mp3"); 
+    }
+    function setup() {
+    createCanvas(windowWidth, windowHeight);
+    background(255);
+    scissorsX = (width - 100) - 50;
+    scissorsY = height - 150;
+    textPositions.push(createVector(width / 2, height / 2 - 160));
+    textPositions.push(createVector(width / 2, height / 2 - 90));
+    textPositions.push(createVector(width / 2, height / 2 + 60));
+    textPositions.push(createVector(width / 2, height / 2 + 130));
+    textPositions.push(createVector(width / 2, height / 2 + 280));
+    }
+    class Piece {
+    constructor(x, y, xSpeed, ySpeed, img) {
+    this.x = x;
+    this.y = y;
+    this.xSpeed = xSpeed;
+    this.ySpeed = ySpeed;
+    this.img = img;
+    }
+    move() {
+    this.x += this.xSpeed;
+    if (this.x < 0 || this.x > width) {
+    this.xSpeed *= -1;
+    }
+    this.y += this.ySpeed;
+    if (this.y < 0 || this.y > height) {
+    this.ySpeed *= -1;
+    }
+    }
+    display() {
+    image(this.img, this.x, this.y);
+    }
+    }
+    class Constructive {
+    constructor(x, y, size, word, speed) {
+    this.x = x;
+    this.y = y;
+    this.textSize = size;
+    this.speed = speed;
+    this.word = word;
+    this.colors = [
+    color(254, 255,194),
+    color(247, 64, 0)  
+    ];
+    this.color = random(this.colors);
+    this.shadowColor = color(0, 0, 0, 200); 
+    this.shadowOffsetX = 5; 
+    this.shadowOffsetY = 5; 
+    }
+    randomizeSize() {
+    this.textSize = random(20, 200); 
+    }
+    display() {
+    fill(this.shadowColor);
+    textSize(this.textSize);
+    text(this.word, this.x + this.shadowOffsetX, this.y + this.shadowOffsetY);
+    fill(this.color);
+    text(this.word, this.x, this.y);
+    }
+    }
+    function draw() {
+    background(0);
+    if (showScissors) {
+    displayImages();
+    displayText(); 
+    } 
+    if (!showScissors) {
+    for (let i = 0; i < pieces.length; i++) {
+    pieces[i].move();
+    pieces[i].display();
+    }
+    displayText(); 
+    }
+    for (let letter of constructiveLetters) {
+    letter.display();
+     }
+    }
+    function displayText() {
+    textAlign(CENTER);
+    fill(247, 64, 0);
+    textFont('Helvetica');
+    textStyle(BOLD);
+    textSize(170);
+    text('ART', textPositions[0].x, textPositions[0].y);
+    textSize(60);
+    text('MUST BE', textPositions[1].x, textPositions[1].y);
+    textSize(170);
+    text('DESTRUCTIVE', textPositions[2].x, textPositions[2].y);
+    textSize(60);
+    text('AND', textPositions[3].x, textPositions[3].y);
+    textSize(170);
+    text('CONSTRUCTIVE', textPositions[4].x, textPositions[4].y);
+    }
+    function displayImages() {
+    for (let img of imgPieces) {
+    let imageRatio = img.width / img.height;
+    let imgWidth, imgHeight;
+    if (width / height < imageRatio) {
+    imgWidth = width;
+    imgHeight = width / imageRatio;
+    } else {
+    imgHeight = height;
+    imgWidth = height * imageRatio;
+    }
+    if (img.position) {
+    push();
+    translate(img.position.x, img.position.y);
+    imageMode(CENTER);
+    image(img, 0, 0, imgWidth, imgHeight);
+    pop();
+    } else {
+    image(img, (width - imgWidth) / 2, (height - imgHeight) / 2, imgWidth, imgHeight);
+    }
+    }
+    if (showScissors) {
+    drawDashedLine(50, height - 800, width - 30, height - 100, 10, 10);
+    scissorsWidth = 170;
+    scissorsHeight = (scissorsWidth / imgScissors.width) * imgScissors.height;
+    image(imgScissors, scissorsX - 30, scissorsY - 20, scissorsWidth, scissorsHeight);
+    }
+    }
+    function drawDashedLine(x1, y1, x2, y2, dashLength, gapLength) {
+    let totalLength = dist(x1, y1, x2, y2);
+    let numDashes = floor(totalLength / (dashLength + gapLength));
+    for (let i = 0; i < numDashes; i++) {
+    let startX = lerp(x1, x2, (i * (dashLength + gapLength)) / totalLength);
+    let startY = lerp(y1, y2, (i * (dashLength + gapLength)) / totalLength);
+    let endX = startX + cos(atan2(y2 - y1, x2 - x1)) * dashLength;
+    let endY = startY + sin(atan2(y2 - y1, x2 - x1)) * dashLength;
+    line(startX, startY, endX, endY);
+    }
+    }
+    function breakTexts() {
+    for (let i = 0; i < textPositions.length; i++) {
+    textPositions[i].x = random(0, width);
+    textPositions[i].y = random(0, height);
+    }
+    }
+    function mousePressed() {
+    if (getAudioContext().state !== 'running') {
+    getAudioContext().resume();
+    }
+    if (showScissors && mouseX >= scissorsX && mouseX <= scissorsX + scissorsWidth &&
+    mouseY >= scissorsY && mouseY <= scissorsY + scissorsHeight) {
+    breakTexts();
+    showScissors = false;
+    if (cuttingSound.isLoaded()) {
+    cuttingSound.play();  
+    }
+    activatePieces();  
+    } 
+    else if (!showScissors) {
+    let word = customWords[wordIndex % customWords.length];
+    let newConstructive = new Constructive(mouseX, mouseY, size, word, speed);
+    newConstructive.randomizeSize();
+    constructiveLetters.push(newConstructive);
+    wordIndex++;
+    if (placeSound.isLoaded()) {
+    placeSound.play(); 
+    }
+    }
+    }
+    function activatePieces() {
+    for (let i = 0; i < imgPieces.length; i++) {
+    pieces.push(new Piece(random(width), random(height), random(-3, 3), random(-3, 3), imgPieces[i]));
+    }
+    }
+    </code>
+</pre>
+</div>
+
+    </div>
+    </body>
+    </html>
+            
+        
+ 
